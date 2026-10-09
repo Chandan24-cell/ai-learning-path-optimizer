@@ -1,0 +1,846 @@
+{
+  "slug": "physics",
+  "name": "Physics",
+  "description": "A draft progression through measurement, mechanics, waves, and introductory electricity.",
+  "questions_status": "draft; teacher review required",
+  "topics": [
+    {
+      "id": "measurement-and-units",
+      "name": "Measurement and Units",
+      "order": 1,
+      "prerequisites": [],
+      "resources": [
+        {
+          "id": "measurement-and-units-visual-preview",
+          "type": "video",
+          "title": "Measurement and Units: visual preview",
+          "difficulty": 1,
+          "duration": 10,
+          "body": "Draft storyboard activity: sketch and narrate one core measurement and units idea; this label does not refer to a published video."
+        },
+        {
+          "id": "measurement-and-units-guided-practice",
+          "type": "article",
+          "title": "Measurement and Units: guided practice",
+          "difficulty": 2,
+          "duration": 10,
+          "body": "Original self-guided activity: work through a short measurement and units example and check each reasoning step; this is a learning prompt, not an external resource."
+        }
+      ],
+      "questions": [
+        {
+          "id": "measurement-and-units-question-01",
+          "difficulty": 1,
+          "text": "What is the SI base unit of length?",
+          "options": [
+            "second",
+            "meter",
+            "kilogram",
+            "newton"
+          ],
+          "correct_option": 1,
+          "explanation": "The meter is the SI base unit for length.",
+          "diagnostic": true
+        },
+        {
+          "id": "measurement-and-units-question-02",
+          "difficulty": 2,
+          "text": "How many meters are in 3 kilometers?",
+          "options": [
+            "30",
+            "300",
+            "3,000",
+            "30,000"
+          ],
+          "correct_option": 2,
+          "explanation": "A kilometer is 1,000 meters, so 3 km = 3,000 m.",
+          "diagnostic": false
+        },
+        {
+          "id": "measurement-and-units-question-03",
+          "difficulty": 3,
+          "text": "Which quantity is a scalar?",
+          "options": [
+            "Velocity",
+            "Force",
+            "Displacement",
+            "Mass"
+          ],
+          "correct_option": 3,
+          "explanation": "Mass has magnitude only; the other listed quantities have direction.",
+          "diagnostic": false
+        },
+        {
+          "id": "measurement-and-units-question-04",
+          "difficulty": 4,
+          "text": "A measurement is 12.0 cm. What does the trailing zero communicate?",
+          "options": [
+            "The value is exactly 12",
+            "The measurement is recorded to the tenths place",
+            "The unit is millimeters",
+            "The value has no uncertainty"
+          ],
+          "correct_option": 1,
+          "explanation": "A trailing zero after the decimal indicates reported precision to 0.1 cm.",
+          "diagnostic": false
+        },
+        {
+          "id": "measurement-and-units-question-05",
+          "difficulty": 5,
+          "text": "Which SI base-unit combination is equivalent to one joule?",
+          "options": [
+            "kg·m/s",
+            "kg·m²/s²",
+            "kg·m²/s",
+            "kg/s²"
+          ],
+          "correct_option": 1,
+          "explanation": "A joule is a newton-meter: (kg·m/s²)·m = kg·m²/s².",
+          "diagnostic": false
+        },
+        {
+          "id": "measurement-and-units-question-06",
+          "difficulty": 2,
+          "text": "What is 250 milligrams in grams?",
+          "options": [
+            "0.025 g",
+            "0.25 g",
+            "2.5 g",
+            "250,000 g"
+          ],
+          "correct_option": 1,
+          "explanation": "There are 1,000 mg per gram, so 250 mg = 0.25 g.",
+          "diagnostic": false
+        },
+        {
+          "id": "measurement-and-units-question-07",
+          "difficulty": 3,
+          "text": "Which dimension describes speed?",
+          "options": [
+            "Length × time",
+            "Length / time",
+            "Mass × length",
+            "Time / length"
+          ],
+          "correct_option": 1,
+          "explanation": "Speed is distance traveled divided by elapsed time.",
+          "diagnostic": false
+        },
+        {
+          "id": "measurement-and-units-question-08",
+          "difficulty": 4,
+          "text": "A quantity is 5 m/s. What is its value in km/h?",
+          "options": [
+            "1.8 km/h",
+            "18 km/h",
+            "50 km/h",
+            "72 km/h"
+          ],
+          "correct_option": 1,
+          "explanation": "Multiply by 3.6 to convert m/s to km/h: 5 × 3.6 = 18.",
+          "diagnostic": false
+        }
+      ]
+    },
+    {
+      "id": "motion",
+      "name": "Motion",
+      "order": 2,
+      "prerequisites": [
+        "measurement-and-units"
+      ],
+      "resources": [
+        {
+          "id": "motion-visual-preview",
+          "type": "video",
+          "title": "Motion: visual preview",
+          "difficulty": 2,
+          "duration": 10,
+          "body": "Draft storyboard activity: sketch and narrate one core motion idea; this label does not refer to a published video."
+        },
+        {
+          "id": "motion-guided-practice",
+          "type": "quiz",
+          "title": "Motion: guided practice",
+          "difficulty": 3,
+          "duration": 10,
+          "body": "Original self-guided activity: work through a short motion example and check each reasoning step; this is a learning prompt, not an external resource."
+        }
+      ],
+      "questions": [
+        {
+          "id": "motion-question-01",
+          "difficulty": 1,
+          "text": "A runner travels 100 m in 20 s. What is the average speed?",
+          "options": [
+            "2 m/s",
+            "5 m/s",
+            "20 m/s",
+            "2,000 m/s"
+          ],
+          "correct_option": 1,
+          "explanation": "Average speed is distance divided by time: 100/20 = 5 m/s.",
+          "diagnostic": true
+        },
+        {
+          "id": "motion-question-02",
+          "difficulty": 2,
+          "text": "An object’s position changes from 3 m to 11 m east. What is its displacement?",
+          "options": [
+            "8 m east",
+            "14 m east",
+            "8 m west",
+            "−14 m east"
+          ],
+          "correct_option": 0,
+          "explanation": "Displacement is final position minus initial position: 11 - 3 = 8 m east.",
+          "diagnostic": false
+        },
+        {
+          "id": "motion-question-03",
+          "difficulty": 3,
+          "text": "A car speeds up from 4 m/s to 10 m/s in 3 s. What is its average acceleration?",
+          "options": [
+            "2 m/s²",
+            "3 m/s²",
+            "6 m/s²",
+            "14 m/s²"
+          ],
+          "correct_option": 0,
+          "explanation": "Acceleration is change in velocity over time: (10-4)/3 = 2 m/s².",
+          "diagnostic": false
+        },
+        {
+          "id": "motion-question-04",
+          "difficulty": 4,
+          "text": "An object is dropped from rest, ignoring air resistance. What is its velocity after 2 s near Earth (g≈9.8 m/s²)?",
+          "options": [
+            "9.8 m/s downward",
+            "19.6 m/s downward",
+            "4.9 m/s downward",
+            "0 m/s"
+          ],
+          "correct_option": 1,
+          "explanation": "The change in velocity is gt ≈ 9.8×2 = 19.6 m/s downward.",
+          "diagnostic": false
+        },
+        {
+          "id": "motion-question-05",
+          "difficulty": 5,
+          "text": "An object moves at constant velocity. What is its acceleration?",
+          "options": [
+            "Equal to its velocity",
+            "Zero",
+            "Increasing with time",
+            "Always 9.8 m/s²"
+          ],
+          "correct_option": 1,
+          "explanation": "Constant velocity means no change in velocity, so acceleration is zero.",
+          "diagnostic": false
+        },
+        {
+          "id": "motion-question-06",
+          "difficulty": 2,
+          "text": "On a position-time graph, what does the slope represent?",
+          "options": [
+            "Acceleration",
+            "Position",
+            "Velocity",
+            "Mass"
+          ],
+          "correct_option": 2,
+          "explanation": "Slope is change in position divided by time, which is velocity.",
+          "diagnostic": false
+        },
+        {
+          "id": "motion-question-07",
+          "difficulty": 3,
+          "text": "A cyclist covers 30 km in 2 h. What is the average speed?",
+          "options": [
+            "15 km/h",
+            "28 km/h",
+            "32 km/h",
+            "60 km/h"
+          ],
+          "correct_option": 0,
+          "explanation": "Average speed equals total distance divided by total time: 30/2 = 15 km/h.",
+          "diagnostic": false
+        },
+        {
+          "id": "motion-question-08",
+          "difficulty": 4,
+          "text": "A ball is thrown straight up. At its highest point, ignoring air resistance, what is true?",
+          "options": [
+            "Its velocity is zero momentarily and acceleration is downward",
+            "Both velocity and acceleration are zero",
+            "Its velocity is upward and acceleration is zero",
+            "Its acceleration is upward"
+          ],
+          "correct_option": 0,
+          "explanation": "At the peak its vertical velocity is momentarily zero, but gravity still accelerates it downward.",
+          "diagnostic": false
+        }
+      ]
+    },
+    {
+      "id": "forces",
+      "name": "Forces and Newton’s Laws",
+      "order": 3,
+      "prerequisites": [
+        "motion"
+      ],
+      "resources": [
+        {
+          "id": "forces-visual-preview",
+          "type": "video",
+          "title": "Forces and Newton’s Laws: visual preview",
+          "difficulty": 3,
+          "duration": 10,
+          "body": "Draft storyboard activity: sketch and narrate one core forces and newton’s laws idea; this label does not refer to a published video."
+        },
+        {
+          "id": "forces-guided-practice",
+          "type": "interactive",
+          "title": "Forces and Newton’s Laws: guided practice",
+          "difficulty": 4,
+          "duration": 10,
+          "body": "Original self-guided activity: work through a short forces and newton’s laws example and check each reasoning step; this is a learning prompt, not an external resource."
+        }
+      ],
+      "questions": [
+        {
+          "id": "forces-question-01",
+          "difficulty": 1,
+          "text": "What is the SI unit of force?",
+          "options": [
+            "Joule",
+            "Newton",
+            "Watt",
+            "Pascal"
+          ],
+          "correct_option": 1,
+          "explanation": "Force is measured in newtons (N).",
+          "diagnostic": true
+        },
+        {
+          "id": "forces-question-02",
+          "difficulty": 2,
+          "text": "A net force of 12 N acts on a 3 kg object. What is its acceleration?",
+          "options": [
+            "0.25 m/s²",
+            "4 m/s²",
+            "9 m/s²",
+            "36 m/s²"
+          ],
+          "correct_option": 1,
+          "explanation": "Newton’s second law gives a = F/m = 12/3 = 4 m/s².",
+          "diagnostic": false
+        },
+        {
+          "id": "forces-question-03",
+          "difficulty": 3,
+          "text": "A book rests on a table. Which force balances its weight vertically?",
+          "options": [
+            "Friction",
+            "The table’s normal force",
+            "Air resistance",
+            "A magnetic force"
+          ],
+          "correct_option": 1,
+          "explanation": "The table exerts an upward normal force equal to the book’s weight at rest.",
+          "diagnostic": false
+        },
+        {
+          "id": "forces-question-04",
+          "difficulty": 4,
+          "text": "If the net force on an object is zero, what does Newton’s first law say?",
+          "options": [
+            "It must be at rest",
+            "Its velocity remains constant",
+            "It must speed up",
+            "Its mass becomes zero"
+          ],
+          "correct_option": 1,
+          "explanation": "Zero net force means no acceleration, so velocity stays constant.",
+          "diagnostic": false
+        },
+        {
+          "id": "forces-question-05",
+          "difficulty": 5,
+          "text": "A 2 kg object accelerates at 3 m/s². What is the net force?",
+          "options": [
+            "1.5 N",
+            "5 N",
+            "6 N",
+            "9 N"
+          ],
+          "correct_option": 2,
+          "explanation": "Newton’s second law gives F = ma = 2×3 = 6 N.",
+          "diagnostic": false
+        },
+        {
+          "id": "forces-question-06",
+          "difficulty": 2,
+          "text": "What is the approximate weight of a 5 kg mass near Earth (g≈9.8 m/s²)?",
+          "options": [
+            "0.51 N",
+            "5 N",
+            "49 N",
+            "98 N"
+          ],
+          "correct_option": 2,
+          "explanation": "Weight is mg: 5×9.8 = 49 N.",
+          "diagnostic": false
+        },
+        {
+          "id": "forces-question-07",
+          "difficulty": 3,
+          "text": "When you push a wall, what is the Newton’s-third-law partner to your push?",
+          "options": [
+            "The wall pushes you with an equal and opposite force",
+            "Gravity stops acting on you",
+            "The wall exerts no force",
+            "Friction reverses gravity"
+          ],
+          "correct_option": 0,
+          "explanation": "Interaction forces occur in equal and opposite pairs on different objects.",
+          "diagnostic": false
+        },
+        {
+          "id": "forces-question-08",
+          "difficulty": 4,
+          "text": "A 10 kg cart has 30 N forward and 10 N backward forces. What is its acceleration?",
+          "options": [
+            "1 m/s² forward",
+            "2 m/s² forward",
+            "3 m/s² forward",
+            "4 m/s² backward"
+          ],
+          "correct_option": 1,
+          "explanation": "The net force is 20 N forward, so a = 20/10 = 2 m/s² forward.",
+          "diagnostic": false
+        }
+      ]
+    },
+    {
+      "id": "energy",
+      "name": "Work, Energy, and Power",
+      "order": 4,
+      "prerequisites": [
+        "forces"
+      ],
+      "resources": [
+        {
+          "id": "energy-visual-preview",
+          "type": "video",
+          "title": "Work, Energy, and Power: visual preview",
+          "difficulty": 1,
+          "duration": 10,
+          "body": "Draft storyboard activity: sketch and narrate one core work, energy, and power idea; this label does not refer to a published video."
+        },
+        {
+          "id": "energy-guided-practice",
+          "type": "project",
+          "title": "Work, Energy, and Power: guided practice",
+          "difficulty": 2,
+          "duration": 10,
+          "body": "Original self-guided activity: work through a short work, energy, and power example and check each reasoning step; this is a learning prompt, not an external resource."
+        }
+      ],
+      "questions": [
+        {
+          "id": "energy-question-01",
+          "difficulty": 1,
+          "text": "What is the SI unit of energy?",
+          "options": [
+            "Newton",
+            "Joule",
+            "Watt",
+            "Ampere"
+          ],
+          "correct_option": 1,
+          "explanation": "Energy is measured in joules.",
+          "diagnostic": true
+        },
+        {
+          "id": "energy-question-02",
+          "difficulty": 2,
+          "text": "A 10 N force moves an object 3 m in the force direction. How much work is done?",
+          "options": [
+            "3 J",
+            "13 J",
+            "30 J",
+            "300 J"
+          ],
+          "correct_option": 2,
+          "explanation": "Work is force times displacement along the force: 10×3 = 30 J.",
+          "diagnostic": false
+        },
+        {
+          "id": "energy-question-03",
+          "difficulty": 3,
+          "text": "What is the kinetic energy of a 2 kg object moving at 3 m/s?",
+          "options": [
+            "6 J",
+            "9 J",
+            "18 J",
+            "27 J"
+          ],
+          "correct_option": 1,
+          "explanation": "Kinetic energy is ½mv² = ½×2×9 = 9 J.",
+          "diagnostic": false
+        },
+        {
+          "id": "energy-question-04",
+          "difficulty": 4,
+          "text": "A 2 kg object is lifted 5 m. Approximately how much gravitational potential energy does it gain (g≈10 m/s²)?",
+          "options": [
+            "10 J",
+            "25 J",
+            "50 J",
+            "100 J"
+          ],
+          "correct_option": 3,
+          "explanation": "The gain is mgh = 2×10×5 = 100 J.",
+          "diagnostic": false
+        },
+        {
+          "id": "energy-question-05",
+          "difficulty": 5,
+          "text": "A machine transfers 600 J of energy in 20 s. What is its average power?",
+          "options": [
+            "12 W",
+            "30 W",
+            "120 W",
+            "12,000 W"
+          ],
+          "correct_option": 1,
+          "explanation": "Power is energy transferred per time: 600/20 = 30 W.",
+          "diagnostic": false
+        },
+        {
+          "id": "energy-question-06",
+          "difficulty": 2,
+          "text": "If an object’s speed doubles, by what factor does its kinetic energy change?",
+          "options": [
+            "2",
+            "4",
+            "8",
+            "It is unchanged"
+          ],
+          "correct_option": 1,
+          "explanation": "Kinetic energy is proportional to speed squared, so doubling speed gives four times the energy.",
+          "diagnostic": false
+        },
+        {
+          "id": "energy-question-07",
+          "difficulty": 3,
+          "text": "In an ideal isolated system, what happens to total energy?",
+          "options": [
+            "It is conserved",
+            "It always becomes heat",
+            "It doubles every second",
+            "It disappears during motion"
+          ],
+          "correct_option": 0,
+          "explanation": "Energy can change forms, but total energy remains constant in an isolated system.",
+          "diagnostic": false
+        },
+        {
+          "id": "energy-question-08",
+          "difficulty": 4,
+          "text": "A 100 W lamp runs for 60 s. How much energy does it use?",
+          "options": [
+            "60 J",
+            "600 J",
+            "6,000 J",
+            "60,000 J"
+          ],
+          "correct_option": 2,
+          "explanation": "Energy = power × time = 100×60 = 6,000 J.",
+          "diagnostic": false
+        }
+      ]
+    },
+    {
+      "id": "waves",
+      "name": "Waves and Sound",
+      "order": 5,
+      "prerequisites": [
+        "measurement-and-units"
+      ],
+      "resources": [
+        {
+          "id": "waves-visual-preview",
+          "type": "video",
+          "title": "Waves and Sound: visual preview",
+          "difficulty": 2,
+          "duration": 10,
+          "body": "Draft storyboard activity: sketch and narrate one core waves and sound idea; this label does not refer to a published video."
+        },
+        {
+          "id": "waves-guided-practice",
+          "type": "article",
+          "title": "Waves and Sound: guided practice",
+          "difficulty": 3,
+          "duration": 10,
+          "body": "Original self-guided activity: work through a short waves and sound example and check each reasoning step; this is a learning prompt, not an external resource."
+        }
+      ],
+      "questions": [
+        {
+          "id": "waves-question-01",
+          "difficulty": 1,
+          "text": "What is the SI unit of frequency?",
+          "options": [
+            "Meter",
+            "Hertz",
+            "Decibel",
+            "Second"
+          ],
+          "correct_option": 1,
+          "explanation": "Frequency is measured in hertz, equivalent to cycles per second.",
+          "diagnostic": true
+        },
+        {
+          "id": "waves-question-02",
+          "difficulty": 2,
+          "text": "A wave has frequency 5 Hz and wavelength 2 m. What is its speed?",
+          "options": [
+            "2.5 m/s",
+            "7 m/s",
+            "10 m/s",
+            "25 m/s"
+          ],
+          "correct_option": 2,
+          "explanation": "Wave speed is frequency times wavelength: 5×2 = 10 m/s.",
+          "diagnostic": false
+        },
+        {
+          "id": "waves-question-03",
+          "difficulty": 3,
+          "text": "In a transverse wave, particle motion is what relative to the direction of travel?",
+          "options": [
+            "Parallel",
+            "Perpendicular",
+            "Always circular",
+            "Absent"
+          ],
+          "correct_option": 1,
+          "explanation": "Transverse oscillations are perpendicular to the wave’s propagation direction.",
+          "diagnostic": false
+        },
+        {
+          "id": "waves-question-04",
+          "difficulty": 4,
+          "text": "A sound wave travels through air. What kind of wave is it?",
+          "options": [
+            "Transverse electromagnetic",
+            "Longitudinal mechanical",
+            "Transverse mechanical only",
+            "A vacuum wave"
+          ],
+          "correct_option": 1,
+          "explanation": "Sound in air is a mechanical longitudinal wave of compressions and rarefactions.",
+          "diagnostic": false
+        },
+        {
+          "id": "waves-question-05",
+          "difficulty": 5,
+          "text": "If a wave’s frequency doubles while its speed in the same medium stays fixed, what happens to its wavelength?",
+          "options": [
+            "It doubles",
+            "It halves",
+            "It remains fixed",
+            "It becomes zero"
+          ],
+          "correct_option": 1,
+          "explanation": "Since v=fλ and v is fixed, doubling f halves λ.",
+          "diagnostic": false
+        },
+        {
+          "id": "waves-question-06",
+          "difficulty": 2,
+          "text": "What does a wave’s amplitude generally describe?",
+          "options": [
+            "Maximum displacement from equilibrium",
+            "Number of cycles per second",
+            "Distance between crests",
+            "Travel time per cycle"
+          ],
+          "correct_option": 0,
+          "explanation": "Amplitude is the maximum displacement from the equilibrium position.",
+          "diagnostic": false
+        },
+        {
+          "id": "waves-question-07",
+          "difficulty": 3,
+          "text": "What is the period of a wave with frequency 4 Hz?",
+          "options": [
+            "0.25 s",
+            "2 s",
+            "4 s",
+            "8 s"
+          ],
+          "correct_option": 0,
+          "explanation": "Period T is the reciprocal of frequency: T=1/4 s.",
+          "diagnostic": false
+        },
+        {
+          "id": "waves-question-08",
+          "difficulty": 4,
+          "text": "Why can sound not travel through a vacuum?",
+          "options": [
+            "It has no frequency there",
+            "It requires a material medium to transmit vibrations",
+            "Vacuum reflects all sound",
+            "Sound travels only through solids"
+          ],
+          "correct_option": 1,
+          "explanation": "Sound is mechanical and needs particles to pass on pressure disturbances.",
+          "diagnostic": false
+        }
+      ]
+    },
+    {
+      "id": "electricity-and-magnetism",
+      "name": "Electricity and Magnetism",
+      "order": 6,
+      "prerequisites": [
+        "forces"
+      ],
+      "resources": [
+        {
+          "id": "electricity-and-magnetism-visual-preview",
+          "type": "video",
+          "title": "Electricity and Magnetism: visual preview",
+          "difficulty": 3,
+          "duration": 10,
+          "body": "Draft storyboard activity: sketch and narrate one core electricity and magnetism idea; this label does not refer to a published video."
+        },
+        {
+          "id": "electricity-and-magnetism-guided-practice",
+          "type": "quiz",
+          "title": "Electricity and Magnetism: guided practice",
+          "difficulty": 4,
+          "duration": 10,
+          "body": "Original self-guided activity: work through a short electricity and magnetism example and check each reasoning step; this is a learning prompt, not an external resource."
+        }
+      ],
+      "questions": [
+        {
+          "id": "electricity-and-magnetism-question-01",
+          "difficulty": 1,
+          "text": "What is the SI unit of electric current?",
+          "options": [
+            "Volt",
+            "Ohm",
+            "Ampere",
+            "Coulomb"
+          ],
+          "correct_option": 2,
+          "explanation": "Electric current is measured in amperes.",
+          "diagnostic": true
+        },
+        {
+          "id": "electricity-and-magnetism-question-02",
+          "difficulty": 2,
+          "text": "A 6 V battery is connected across a 3 Ω resistor. What current flows?",
+          "options": [
+            "0.5 A",
+            "2 A",
+            "9 A",
+            "18 A"
+          ],
+          "correct_option": 1,
+          "explanation": "Ohm’s law gives I=V/R=6/3=2 A.",
+          "diagnostic": false
+        },
+        {
+          "id": "electricity-and-magnetism-question-03",
+          "difficulty": 3,
+          "text": "Two positive electric charges placed near each other exert what kind of force?",
+          "options": [
+            "Attractive",
+            "Repulsive",
+            "No force",
+            "Only gravitational force"
+          ],
+          "correct_option": 1,
+          "explanation": "Like electric charges repel.",
+          "diagnostic": false
+        },
+        {
+          "id": "electricity-and-magnetism-question-04",
+          "difficulty": 4,
+          "text": "In a simple series circuit, what happens to current through each component?",
+          "options": [
+            "It is the same through each component",
+            "It is zero after the first component",
+            "It increases at each resistor",
+            "It depends only on wire color"
+          ],
+          "correct_option": 0,
+          "explanation": "A series circuit has one path, so the same current passes through each component.",
+          "diagnostic": false
+        },
+        {
+          "id": "electricity-and-magnetism-question-05",
+          "difficulty": 5,
+          "text": "Two resistors of 6 Ω and 3 Ω are connected in parallel. What is their equivalent resistance?",
+          "options": [
+            "2 Ω",
+            "3 Ω",
+            "4.5 Ω",
+            "9 Ω"
+          ],
+          "correct_option": 0,
+          "explanation": "For parallel resistors, 1/R=1/6+1/3=1/2, so R=2 Ω.",
+          "diagnostic": false
+        },
+        {
+          "id": "electricity-and-magnetism-question-06",
+          "difficulty": 2,
+          "text": "What is the SI unit of electric charge?",
+          "options": [
+            "Coulomb",
+            "Ampere",
+            "Volt",
+            "Tesla"
+          ],
+          "correct_option": 0,
+          "explanation": "Electric charge is measured in coulombs.",
+          "diagnostic": false
+        },
+        {
+          "id": "electricity-and-magnetism-question-07",
+          "difficulty": 3,
+          "text": "What happens to the magnetic field around a straight wire if its current increases?",
+          "options": [
+            "The field becomes stronger",
+            "The field vanishes",
+            "Its direction must reverse",
+            "The wire becomes an insulator"
+          ],
+          "correct_option": 0,
+          "explanation": "The magnetic field magnitude around the wire is proportional to current.",
+          "diagnostic": false
+        },
+        {
+          "id": "electricity-and-magnetism-question-08",
+          "difficulty": 4,
+          "text": "A device has 12 V across it and carries 0.5 A. What is its electrical power?",
+          "options": [
+            "6 W",
+            "12 W",
+            "24 W",
+            "0.042 W"
+          ],
+          "correct_option": 0,
+          "explanation": "Electrical power is P=VI=12×0.5=6 W.",
+          "diagnostic": false
+        }
+      ]
+    }
+  ]
+}

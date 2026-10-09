@@ -1,0 +1,846 @@
+{
+  "slug": "mathematics",
+  "name": "Mathematics",
+  "description": "A draft sequence of core mathematics ideas with practice questions for teacher review.",
+  "questions_status": "draft; teacher review required",
+  "topics": [
+    {
+      "id": "algebra",
+      "name": "Algebra",
+      "order": 1,
+      "prerequisites": [],
+      "resources": [
+        {
+          "id": "algebra-visual-preview",
+          "type": "video",
+          "title": "Algebra: visual preview",
+          "difficulty": 1,
+          "duration": 10,
+          "body": "Draft storyboard activity: sketch and narrate one core algebra idea; this label does not refer to a published video."
+        },
+        {
+          "id": "algebra-guided-practice",
+          "type": "article",
+          "title": "Algebra: guided practice",
+          "difficulty": 2,
+          "duration": 10,
+          "body": "Original self-guided activity: work through a short algebra example and check each reasoning step; this is a learning prompt, not an external resource."
+        }
+      ],
+      "questions": [
+        {
+          "id": "algebra-question-01",
+          "difficulty": 1,
+          "text": "Solve 3x + 5 = 20.",
+          "options": [
+            "x = 3",
+            "x = 5",
+            "x = 8",
+            "x = 15"
+          ],
+          "correct_option": 1,
+          "explanation": "Subtract 5 to get 3x = 15, then divide by 3.",
+          "diagnostic": true
+        },
+        {
+          "id": "algebra-question-02",
+          "difficulty": 2,
+          "text": "If y = 2x - 1, what is y when x = 4?",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "9"
+          ],
+          "correct_option": 2,
+          "explanation": "Substitution gives y = 2(4) - 1 = 7.",
+          "diagnostic": false
+        },
+        {
+          "id": "algebra-question-03",
+          "difficulty": 3,
+          "text": "Which expression is equivalent to 4(a + 2) - 3a?",
+          "options": [
+            "a + 8",
+            "7a + 2",
+            "a + 2",
+            "4a + 5"
+          ],
+          "correct_option": 0,
+          "explanation": "Distribute 4, then combine 4a - 3a to obtain a + 8.",
+          "diagnostic": false
+        },
+        {
+          "id": "algebra-question-04",
+          "difficulty": 4,
+          "text": "The product of two consecutive integers is 56. Which pair works?",
+          "options": [
+            "6 and 7",
+            "7 and 8",
+            "8 and 9",
+            "−7 and −8"
+          ],
+          "correct_option": 1,
+          "explanation": "The consecutive integers 7 and 8 have product 56.",
+          "diagnostic": false
+        },
+        {
+          "id": "algebra-question-05",
+          "difficulty": 5,
+          "text": "For x² - 5x + 6 = 0, which are the roots?",
+          "options": [
+            "−2 and −3",
+            "1 and 6",
+            "2 and 3",
+            "−1 and −6"
+          ],
+          "correct_option": 2,
+          "explanation": "Factor as (x - 2)(x - 3) = 0.",
+          "diagnostic": false
+        },
+        {
+          "id": "algebra-question-06",
+          "difficulty": 2,
+          "text": "Which value of x makes 2(x - 3) = 10 true?",
+          "options": [
+            "2",
+            "5",
+            "8",
+            "13"
+          ],
+          "correct_option": 2,
+          "explanation": "Divide both sides by 2 to get x - 3 = 5, so x = 8.",
+          "diagnostic": false
+        },
+        {
+          "id": "algebra-question-07",
+          "difficulty": 3,
+          "text": "A line has slope 3 and y-intercept −2. Which equation describes it?",
+          "options": [
+            "y = −2x + 3",
+            "y = 3x - 2",
+            "y = 3x + 2",
+            "y = x - 2"
+          ],
+          "correct_option": 1,
+          "explanation": "Slope-intercept form is y = mx + b, with m = 3 and b = −2.",
+          "diagnostic": false
+        },
+        {
+          "id": "algebra-question-08",
+          "difficulty": 4,
+          "text": "If f(x) = x² + 1, what is f(−3)?",
+          "options": [
+            "−8",
+            "8",
+            "10",
+            "−10"
+          ],
+          "correct_option": 2,
+          "explanation": "Squaring −3 gives 9, and adding 1 gives 10.",
+          "diagnostic": false
+        }
+      ]
+    },
+    {
+      "id": "geometry",
+      "name": "Geometry",
+      "order": 2,
+      "prerequisites": [
+        "algebra"
+      ],
+      "resources": [
+        {
+          "id": "geometry-visual-preview",
+          "type": "video",
+          "title": "Geometry: visual preview",
+          "difficulty": 2,
+          "duration": 10,
+          "body": "Draft storyboard activity: sketch and narrate one core geometry idea; this label does not refer to a published video."
+        },
+        {
+          "id": "geometry-guided-practice",
+          "type": "quiz",
+          "title": "Geometry: guided practice",
+          "difficulty": 3,
+          "duration": 10,
+          "body": "Original self-guided activity: work through a short geometry example and check each reasoning step; this is a learning prompt, not an external resource."
+        }
+      ],
+      "questions": [
+        {
+          "id": "geometry-question-01",
+          "difficulty": 1,
+          "text": "What is the sum of the interior angles of a triangle?",
+          "options": [
+            "90°",
+            "180°",
+            "270°",
+            "360°"
+          ],
+          "correct_option": 1,
+          "explanation": "Every Euclidean triangle has interior angles summing to 180°.",
+          "diagnostic": true
+        },
+        {
+          "id": "geometry-question-02",
+          "difficulty": 2,
+          "text": "A rectangle is 8 cm long and 3 cm wide. What is its area?",
+          "options": [
+            "11 cm²",
+            "22 cm²",
+            "24 cm²",
+            "48 cm²"
+          ],
+          "correct_option": 2,
+          "explanation": "Area is length times width: 8 × 3 = 24 cm².",
+          "diagnostic": false
+        },
+        {
+          "id": "geometry-question-03",
+          "difficulty": 3,
+          "text": "A right triangle has legs 6 and 8. What is the hypotenuse?",
+          "options": [
+            "9",
+            "10",
+            "12",
+            "14"
+          ],
+          "correct_option": 1,
+          "explanation": "By the Pythagorean theorem, c² = 6² + 8² = 100, so c = 10.",
+          "diagnostic": false
+        },
+        {
+          "id": "geometry-question-04",
+          "difficulty": 4,
+          "text": "A circle has radius 4. What is its circumference?",
+          "options": [
+            "4π",
+            "8π",
+            "16π",
+            "32π"
+          ],
+          "correct_option": 1,
+          "explanation": "Circumference is 2πr, which is 8π for r = 4.",
+          "diagnostic": false
+        },
+        {
+          "id": "geometry-question-05",
+          "difficulty": 5,
+          "text": "Two similar triangles have corresponding side ratio 2:5. If a smaller side is 6, what is the matching larger side?",
+          "options": [
+            "10",
+            "12",
+            "15",
+            "30"
+          ],
+          "correct_option": 2,
+          "explanation": "The scale factor is 5/2, so 6 × 5/2 = 15.",
+          "diagnostic": false
+        },
+        {
+          "id": "geometry-question-06",
+          "difficulty": 2,
+          "text": "What is the perimeter of a square with side length 7?",
+          "options": [
+            "14",
+            "21",
+            "28",
+            "49"
+          ],
+          "correct_option": 2,
+          "explanation": "A square has four equal sides, so its perimeter is 4 × 7 = 28.",
+          "diagnostic": false
+        },
+        {
+          "id": "geometry-question-07",
+          "difficulty": 3,
+          "text": "An angle supplementary to 68° measures what?",
+          "options": [
+            "22°",
+            "68°",
+            "112°",
+            "292°"
+          ],
+          "correct_option": 2,
+          "explanation": "Supplementary angles add to 180°, and 180 - 68 = 112.",
+          "diagnostic": false
+        },
+        {
+          "id": "geometry-question-08",
+          "difficulty": 4,
+          "text": "A prism has base area 12 cm² and height 5 cm. What is its volume?",
+          "options": [
+            "17 cm³",
+            "30 cm³",
+            "60 cm³",
+            "120 cm³"
+          ],
+          "correct_option": 2,
+          "explanation": "Prism volume is base area times height: 12 × 5 = 60 cm³.",
+          "diagnostic": false
+        }
+      ]
+    },
+    {
+      "id": "probability",
+      "name": "Probability",
+      "order": 3,
+      "prerequisites": [
+        "algebra"
+      ],
+      "resources": [
+        {
+          "id": "probability-visual-preview",
+          "type": "video",
+          "title": "Probability: visual preview",
+          "difficulty": 3,
+          "duration": 10,
+          "body": "Draft storyboard activity: sketch and narrate one core probability idea; this label does not refer to a published video."
+        },
+        {
+          "id": "probability-guided-practice",
+          "type": "interactive",
+          "title": "Probability: guided practice",
+          "difficulty": 4,
+          "duration": 10,
+          "body": "Original self-guided activity: work through a short probability example and check each reasoning step; this is a learning prompt, not an external resource."
+        }
+      ],
+      "questions": [
+        {
+          "id": "probability-question-01",
+          "difficulty": 1,
+          "text": "A fair six-sided die is rolled. What is the probability of rolling a 4?",
+          "options": [
+            "1/2",
+            "1/4",
+            "1/6",
+            "5/6"
+          ],
+          "correct_option": 2,
+          "explanation": "One of the six equally likely faces shows 4.",
+          "diagnostic": true
+        },
+        {
+          "id": "probability-question-02",
+          "difficulty": 2,
+          "text": "A bag has 3 red and 2 blue counters. What is the probability of drawing blue?",
+          "options": [
+            "2/5",
+            "3/5",
+            "1/2",
+            "2/3"
+          ],
+          "correct_option": 0,
+          "explanation": "There are 2 blue counters among 5 counters total.",
+          "diagnostic": false
+        },
+        {
+          "id": "probability-question-03",
+          "difficulty": 3,
+          "text": "A coin is flipped twice. What is the probability of two heads?",
+          "options": [
+            "1/2",
+            "1/3",
+            "1/4",
+            "3/4"
+          ],
+          "correct_option": 2,
+          "explanation": "The independent head probabilities multiply: 1/2 × 1/2 = 1/4.",
+          "diagnostic": false
+        },
+        {
+          "id": "probability-question-04",
+          "difficulty": 4,
+          "text": "A card is selected from a standard 52-card deck. What is the probability it is a heart?",
+          "options": [
+            "1/13",
+            "1/4",
+            "1/2",
+            "13/52 × 4"
+          ],
+          "correct_option": 1,
+          "explanation": "The deck has 13 hearts out of 52 cards, so 13/52 = 1/4.",
+          "diagnostic": false
+        },
+        {
+          "id": "probability-question-05",
+          "difficulty": 5,
+          "text": "Events A and B are independent, with P(A)=0.4 and P(B)=0.5. What is P(A and B)?",
+          "options": [
+            "0.1",
+            "0.2",
+            "0.4",
+            "0.9"
+          ],
+          "correct_option": 1,
+          "explanation": "For independent events, P(A and B) = P(A)P(B) = 0.2.",
+          "diagnostic": false
+        },
+        {
+          "id": "probability-question-06",
+          "difficulty": 2,
+          "text": "A spinner has 8 equal sections, 3 green. What is the probability it does not land on green?",
+          "options": [
+            "3/8",
+            "5/8",
+            "1/3",
+            "8/3"
+          ],
+          "correct_option": 1,
+          "explanation": "Five of the eight sections are not green.",
+          "diagnostic": false
+        },
+        {
+          "id": "probability-question-07",
+          "difficulty": 3,
+          "text": "A fair die is rolled. What is the probability of an even number or a 5?",
+          "options": [
+            "1/6",
+            "1/2",
+            "2/3",
+            "5/6"
+          ],
+          "correct_option": 2,
+          "explanation": "The outcomes are 2, 4, 5, and 6: four of six, or 2/3.",
+          "diagnostic": false
+        },
+        {
+          "id": "probability-question-08",
+          "difficulty": 4,
+          "text": "A box has 4 white and 6 black balls. Two are drawn without replacement. What is the probability both are white?",
+          "options": [
+            "2/15",
+            "4/25",
+            "1/5",
+            "4/10"
+          ],
+          "correct_option": 0,
+          "explanation": "The probability is (4/10)(3/9) = 12/90 = 2/15.",
+          "diagnostic": false
+        }
+      ]
+    },
+    {
+      "id": "calculus",
+      "name": "Calculus",
+      "order": 4,
+      "prerequisites": [
+        "algebra"
+      ],
+      "resources": [
+        {
+          "id": "calculus-visual-preview",
+          "type": "video",
+          "title": "Calculus: visual preview",
+          "difficulty": 1,
+          "duration": 10,
+          "body": "Draft storyboard activity: sketch and narrate one core calculus idea; this label does not refer to a published video."
+        },
+        {
+          "id": "calculus-guided-practice",
+          "type": "project",
+          "title": "Calculus: guided practice",
+          "difficulty": 2,
+          "duration": 10,
+          "body": "Original self-guided activity: work through a short calculus example and check each reasoning step; this is a learning prompt, not an external resource."
+        }
+      ],
+      "questions": [
+        {
+          "id": "calculus-question-01",
+          "difficulty": 1,
+          "text": "What is the derivative of f(x) = x²?",
+          "options": [
+            "x",
+            "2x",
+            "x³/3",
+            "2"
+          ],
+          "correct_option": 1,
+          "explanation": "The power rule gives d(x²)/dx = 2x.",
+          "diagnostic": true
+        },
+        {
+          "id": "calculus-question-02",
+          "difficulty": 2,
+          "text": "What is the derivative of the constant function f(x) = 7?",
+          "options": [
+            "0",
+            "1",
+            "7",
+            "7x"
+          ],
+          "correct_option": 0,
+          "explanation": "A constant does not change as x changes, so its derivative is zero.",
+          "diagnostic": false
+        },
+        {
+          "id": "calculus-question-03",
+          "difficulty": 3,
+          "text": "If f(x) = 3x³, what is f′(x)?",
+          "options": [
+            "3x²",
+            "6x²",
+            "9x²",
+            "9x³"
+          ],
+          "correct_option": 2,
+          "explanation": "The power rule gives 3 × 3x² = 9x².",
+          "diagnostic": false
+        },
+        {
+          "id": "calculus-question-04",
+          "difficulty": 4,
+          "text": "What is the definite integral of 2x from 0 to 3?",
+          "options": [
+            "3",
+            "6",
+            "9",
+            "18"
+          ],
+          "correct_option": 2,
+          "explanation": "An antiderivative is x²; x² evaluated from 0 to 3 is 9.",
+          "diagnostic": false
+        },
+        {
+          "id": "calculus-question-05",
+          "difficulty": 5,
+          "text": "For f(x) = x² - 4x, at what x-value does its minimum occur?",
+          "options": [
+            "−2",
+            "0",
+            "2",
+            "4"
+          ],
+          "correct_option": 2,
+          "explanation": "The derivative is 2x - 4; setting it to zero gives x = 2, the parabola’s minimum.",
+          "diagnostic": false
+        },
+        {
+          "id": "calculus-question-06",
+          "difficulty": 2,
+          "text": "What is the derivative of 5x - 3?",
+          "options": [
+            "−3",
+            "2",
+            "5",
+            "5x"
+          ],
+          "correct_option": 2,
+          "explanation": "The derivative of a linear function ax + b is its slope a.",
+          "diagnostic": false
+        },
+        {
+          "id": "calculus-question-07",
+          "difficulty": 3,
+          "text": "A position function is s(t)=t². What is the instantaneous velocity at t=4?",
+          "options": [
+            "4",
+            "8",
+            "16",
+            "32"
+          ],
+          "correct_option": 1,
+          "explanation": "Velocity is s′(t)=2t, so at t=4 it is 8.",
+          "diagnostic": false
+        },
+        {
+          "id": "calculus-question-08",
+          "difficulty": 4,
+          "text": "Which limit defines the derivative of f at x?",
+          "options": [
+            "limₕ→₀ [f(x+h)-f(x)]/h",
+            "limₕ→∞ f(x+h)",
+            "f(x)/x",
+            "f(x+h)+f(x)"
+          ],
+          "correct_option": 0,
+          "explanation": "The derivative is the limiting difference quotient as the input change h approaches zero.",
+          "diagnostic": false
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics",
+      "order": 5,
+      "prerequisites": [
+        "probability"
+      ],
+      "resources": [
+        {
+          "id": "statistics-visual-preview",
+          "type": "video",
+          "title": "Statistics: visual preview",
+          "difficulty": 2,
+          "duration": 10,
+          "body": "Draft storyboard activity: sketch and narrate one core statistics idea; this label does not refer to a published video."
+        },
+        {
+          "id": "statistics-guided-practice",
+          "type": "article",
+          "title": "Statistics: guided practice",
+          "difficulty": 3,
+          "duration": 10,
+          "body": "Original self-guided activity: work through a short statistics example and check each reasoning step; this is a learning prompt, not an external resource."
+        }
+      ],
+      "questions": [
+        {
+          "id": "statistics-question-01",
+          "difficulty": 1,
+          "text": "What is the mean of 2, 4, and 6?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "12"
+          ],
+          "correct_option": 1,
+          "explanation": "Add the values and divide by three: 12/3 = 4.",
+          "diagnostic": true
+        },
+        {
+          "id": "statistics-question-02",
+          "difficulty": 2,
+          "text": "What is the median of 1, 3, 8, 10, 12?",
+          "options": [
+            "3",
+            "8",
+            "8.5",
+            "10"
+          ],
+          "correct_option": 1,
+          "explanation": "The middle of five ordered values is the third value, 8.",
+          "diagnostic": false
+        },
+        {
+          "id": "statistics-question-03",
+          "difficulty": 3,
+          "text": "Which measure is most resistant to a single extremely large outlier?",
+          "options": [
+            "Mean",
+            "Median",
+            "Range",
+            "Variance"
+          ],
+          "correct_option": 1,
+          "explanation": "The median depends on rank, so an extreme value usually has little effect on it.",
+          "diagnostic": false
+        },
+        {
+          "id": "statistics-question-04",
+          "difficulty": 4,
+          "text": "A data set has mean 10. If 5 is added to every observation, what is the new mean?",
+          "options": [
+            "10",
+            "12",
+            "15",
+            "50"
+          ],
+          "correct_option": 2,
+          "explanation": "Adding a constant to every value raises the mean by that same constant.",
+          "diagnostic": false
+        },
+        {
+          "id": "statistics-question-05",
+          "difficulty": 5,
+          "text": "A population has standard deviation 4. If every value is multiplied by 3, what is the new standard deviation?",
+          "options": [
+            "4",
+            "7",
+            "12",
+            "36"
+          ],
+          "correct_option": 2,
+          "explanation": "Scaling every observation by 3 scales standard deviation by |3|.",
+          "diagnostic": false
+        },
+        {
+          "id": "statistics-question-06",
+          "difficulty": 2,
+          "text": "The values are 4, 4, 5, 7. What is the mode?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "correct_option": 0,
+          "explanation": "The mode is the most frequent value; 4 appears twice.",
+          "diagnostic": false
+        },
+        {
+          "id": "statistics-question-07",
+          "difficulty": 3,
+          "text": "If the correlation between two variables is −0.9, what does that indicate?",
+          "options": [
+            "Strong negative linear association",
+            "Strong positive linear association",
+            "No association of any kind",
+            "One variable causes the other"
+          ],
+          "correct_option": 0,
+          "explanation": "A correlation near −1 indicates a strong negative linear association, not causation.",
+          "diagnostic": false
+        },
+        {
+          "id": "statistics-question-08",
+          "difficulty": 4,
+          "text": "A sample mean is 20 with standard error 2. Using a normal approximation, about what is a 95% confidence interval?",
+          "options": [
+            "18 to 22",
+            "16 to 24",
+            "14 to 26",
+            "10 to 30"
+          ],
+          "correct_option": 1,
+          "explanation": "An approximate 95% interval is mean ± 2 standard errors: 20 ± 4.",
+          "diagnostic": false
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra",
+      "name": "Linear Algebra",
+      "order": 6,
+      "prerequisites": [
+        "algebra"
+      ],
+      "resources": [
+        {
+          "id": "linear-algebra-visual-preview",
+          "type": "video",
+          "title": "Linear Algebra: visual preview",
+          "difficulty": 3,
+          "duration": 10,
+          "body": "Draft storyboard activity: sketch and narrate one core linear algebra idea; this label does not refer to a published video."
+        },
+        {
+          "id": "linear-algebra-guided-practice",
+          "type": "quiz",
+          "title": "Linear Algebra: guided practice",
+          "difficulty": 4,
+          "duration": 10,
+          "body": "Original self-guided activity: work through a short linear algebra example and check each reasoning step; this is a learning prompt, not an external resource."
+        }
+      ],
+      "questions": [
+        {
+          "id": "linear-algebra-question-01",
+          "difficulty": 1,
+          "text": "What is the result of [1, 2] + [3, 4]?",
+          "options": [
+            "[4, 6]",
+            "[3, 8]",
+            "[4, 8]",
+            "[2, 2]"
+          ],
+          "correct_option": 0,
+          "explanation": "Add corresponding components: (1+3, 2+4) = (4, 6).",
+          "diagnostic": true
+        },
+        {
+          "id": "linear-algebra-question-02",
+          "difficulty": 2,
+          "text": "What is the dot product of [2, 1] and [3, 4]?",
+          "options": [
+            "7",
+            "10",
+            "11",
+            "14"
+          ],
+          "correct_option": 1,
+          "explanation": "The dot product is 2×3 + 1×4 = 10.",
+          "diagnostic": false
+        },
+        {
+          "id": "linear-algebra-question-03",
+          "difficulty": 3,
+          "text": "What is the determinant of [[1, 2], [3, 4]]?",
+          "options": [
+            "−2",
+            "2",
+            "10",
+            "−10"
+          ],
+          "correct_option": 0,
+          "explanation": "For a 2×2 matrix, ad - bc = 1×4 - 2×3 = −2.",
+          "diagnostic": false
+        },
+        {
+          "id": "linear-algebra-question-04",
+          "difficulty": 4,
+          "text": "Which vector solves x + y = 5 and x - y = 1?",
+          "options": [
+            "(2, 3)",
+            "(3, 2)",
+            "(4, 1)",
+            "(1, 4)"
+          ],
+          "correct_option": 1,
+          "explanation": "Adding equations gives 2x=6, so x=3 and y=2.",
+          "diagnostic": false
+        },
+        {
+          "id": "linear-algebra-question-05",
+          "difficulty": 5,
+          "text": "For A=[[2,0],[0,3]], what are its eigenvalues?",
+          "options": [
+            "0 and 5",
+            "2 and 3",
+            "−2 and −3",
+            "1 and 6"
+          ],
+          "correct_option": 1,
+          "explanation": "A diagonal matrix has its diagonal entries as eigenvalues.",
+          "diagnostic": false
+        },
+        {
+          "id": "linear-algebra-question-06",
+          "difficulty": 2,
+          "text": "What is 3 times the vector [−1, 2]?",
+          "options": [
+            "[−3, 6]",
+            "[2, 5]",
+            "[−1, 6]",
+            "[3, −6]"
+          ],
+          "correct_option": 0,
+          "explanation": "Scalar multiplication multiplies each component by 3.",
+          "diagnostic": false
+        },
+        {
+          "id": "linear-algebra-question-07",
+          "difficulty": 3,
+          "text": "What is the magnitude of vector [3, 4]?",
+          "options": [
+            "5",
+            "7",
+            "12",
+            "25"
+          ],
+          "correct_option": 0,
+          "explanation": "Magnitude is √(3²+4²) = √25 = 5.",
+          "diagnostic": false
+        },
+        {
+          "id": "linear-algebra-question-08",
+          "difficulty": 4,
+          "text": "Two vectors are orthogonal when their dot product is what?",
+          "options": [
+            "−1",
+            "0",
+            "1",
+            "Their magnitudes"
+          ],
+          "correct_option": 1,
+          "explanation": "Perpendicular vectors have zero dot product.",
+          "diagnostic": false
+        }
+      ]
+    }
+  ]
+}

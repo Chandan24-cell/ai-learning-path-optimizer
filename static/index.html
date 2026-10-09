@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personalized Learning</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="/static/styles.css" />
+  <script src="/static/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- ============ AUTH VIEW ============ -->
+  <main id="auth-view" class="center">
+    <div class="card auth-card">
+      <h1>AI Learning Path</h1>
+      <p class="muted">Sign in to get your personalized next activity.</p>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="login">Log in</button>
+        <button class="tab" data-tab="register">Register</button>
+      </div>
+
+      <div id="tab-login" class="tab-pane active">
+        <label for="login-user">Username</label>
+        <input id="login-user" placeholder="Username" autocomplete="username" />
+        <label for="login-pass">Password</label>
+        <input id="login-pass" type="password" placeholder="Password" autocomplete="current-password" />
+        <button id="login-button" class="btn primary" type="button">Log in</button>
+      </div>
+
+      <div id="tab-register" class="tab-pane">
+        <label for="reg-user">Choose a username</label>
+        <input id="reg-user" placeholder="Choose a username" />
+        <label for="reg-pass">Choose a password</label>
+        <input id="reg-pass" type="password" placeholder="Choose a password" />
+        <label for="reg-role">Account type</label>
+        <select id="reg-role">
+          <option value="student">Student</option>
+          <option value="teacher">Teacher (can edit shared content)</option>
+        </select>
+        <button id="register-button" class="btn primary" type="button">Create account</button>
+      </div>
+
+      <div id="auth-msg" class="msg"></div>
+    </div>
+  </main>
+
+  <!-- ============ APP VIEW ============ -->
+  <div id="app-view" hidden>
+    <header class="topbar">
+      <h1 class="brand">AI Learning Path</h1>
+      <div class="user-area">
+        <span id="user-label" class="muted"></span>
+        <button id="logout-button" class="btn ghost" type="button">Log out</button>
+        <button id="edit-profile-button" class="btn ghost" type="button">Edit learner profile</button>
+        <button id="delete-account-button" class="btn ghost" type="button">Delete my account</button>
+      </div>
+    </header>
+
+    <main id="app-main">
+    <section id="onboarding-card" class="card profile-card" hidden>
+      <h2 id="onboarding-title">Set up your learner profile</h2>
+      <div id="profile-intro">
+        <p id="privacy-notice" class="muted"></p>
+        <p class="notice" role="note">
+          If you are under 18 or your age is unknown, review this information with a parent,
+          guardian, or trusted adult before continuing. We do not ask for your age or birth date.
+        </p>
+        <p class="muted small">Only the choices below are collected. Do not enter a school name or other identifying information.</p>
+      </div>
+      <form id="learner-profile-form" class="profile-form">
+        <label>Country
+          <select id="profile-country" name="country" required></select>
+        </label>
+        <label>Language
+          <select id="profile-language" name="language" required></select>
+        </label>
+        <label>Education level
+          <select id="profile-education-level" name="education_level" required></select>
+        </label>
+        <label>Institution type
+          <select id="profile-institution-type" name="institution_type" required></select>
+        </label>
+        <label>Class, grade, or year
+          <input id="profile-grade-year" name="grade_year" maxlength="80" required />
+        </label>
+        <label>Board, curriculum, or degree program (optional)
+          <select id="profile-curriculum" name="curriculum_program"></select>
+        </label>
+        <label>Field of study
+          <input id="profile-field" name="field_of_study" maxlength="120" required />
+        </label>
+        <label>Learning goal
+          <select id="profile-goal" name="learning_goal" required></select>
+        </label>
+        <label>Hours available each week
+          <input id="profile-weekly-time" name="weekly_time_hours" type="number" min="0.5" max="80" step="0.5" required />
+        </label>
+        <label>Preferred learning style
+          <select id="profile-style" name="learning_style" required></select>
+        </label>
+        <label>Prior experience
+          <select id="profile-experience" name="prior_experience" required></select>
+        </label>
+        <label class="consent-label">
+          <input id="profile-consent" name="consent" type="checkbox" required />
+          I understand what is collected and agree to use these choices to personalize my learning.
+        </label>
+        <div class="profile-actions">
+          <button id="save-profile-button" class="btn primary" type="submit">Save profile and continue</button>
+          <button id="cancel-profile-edit" class="btn ghost" type="button" hidden>Cancel</button>
+          <button id="delete-profile-button" class="btn ghost" type="button" hidden>Delete profile</button>
+        </div>
+        <p id="profile-message" class="msg" aria-live="polite"></p>
+      </form>
+      <section id="subject-step" hidden>
+        <h2>Choose your subjects</h2>
+        <p class="muted small">Choose between 1 and 8 subjects. Draft paths have not been teacher reviewed.</p>
+        <div class="subject-add-options">
+          <label for="onboarding-pack-select">Content packs</label>
+          <label class="inline-option" for="include-sample-subjects">
+            <input id="include-sample-subjects" type="checkbox" />
+            Include sample subjects
+          </label>
+          <div class="subject-add-row">
+            <select id="onboarding-pack-select"></select>
+            <button id="add-pack-subject" class="btn ghost" type="button">Add pack</button>
+          </div>
+          <p id="pack-catalog-errors" class="msg error" role="alert" hidden></p>
+          <label for="manual-subject-name">Type a subject name</label>
+          <div class="subject-add-row">
+            <input id="manual-subject-name" maxlength="120" placeholder="For example, Biology" />
+            <button id="add-manual-subject" class="btn ghost" type="button">Add manual subject</button>
+          </div>
+          <label for="discovery-query">Search the internet if you do not remember the exact name</label>
+          <div class="subject-add-row">
+            <input id="discovery-query" maxlength="120" placeholder="Search for a subject" />
+            <button id="search-subjects" class="btn ghost" type="button">Search</button>
+          </div>
+          <div id="discovery-results" class="discovery-results" aria-live="polite"></div>
+          <div id="path-preview" class="path-preview" aria-live="polite"></div>
+          <label for="enrich-manual-select">Optionally enrich an empty manual subject with a discovered path</label>
+          <select id="enrich-manual-select"></select>
+          <label for="book-query">Find a book or syllabus to use as a reference</label>
+          <div class="subject-add-row">
+            <input id="book-query" maxlength="120" placeholder="Search books" />
+            <button id="search-books" class="btn ghost" type="button">Find books</button>
+          </div>
+          <label for="book-subject-select">Attach reference to a chosen subject</label>
+          <select id="book-subject-select"></select>
+          <div id="book-results" class="discovery-results" aria-live="polite"></div>
+        </div>
+        <h3>Chosen subjects</h3>
+        <p id="subject-count" class="muted" aria-live="polite">0 of 8</p>
+        <p id="subject-limit-message" class="muted small" aria-live="polite" hidden>You have chosen 8 subjects. Remove one to add another.</p>
+        <ul id="chosen-subjects" class="subject-chips"></ul>
+        <label for="subject-target-depth">Target path depth</label>
+        <select id="subject-target-depth">
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+        <div class="profile-actions">
+          <button id="finish-subject-step" class="btn primary" type="button">Choose subjects and continue</button>
+          <button id="cancel-subject-step" class="btn ghost" type="button" hidden>Done</button>
+        </div>
+        <p id="subject-step-message" class="msg" aria-live="polite"></p>
+      </section>
+    </section>
+
+    <div id="dashboard-content" class="grid">
+      <section class="card span-3 subject-controls">
+        <nav class="subject-nav" aria-label="Subject navigation">
+          <label for="subject-select"><strong>My subjects</strong></label>
+          <select id="subject-select" aria-label="Active subject"></select>
+          <label for="available-subjects">Available subjects</label>
+          <select id="available-subjects" aria-label="Available subjects"></select>
+          <button id="enroll-subject" class="btn ghost" type="button">Enroll</button>
+          <button id="manage-subjects-button" class="btn ghost" type="button">Manage subjects</button>
+        </nav>
+        <p id="subject-message" class="msg" aria-live="polite"></p>
+      </section>
+
+      <section id="diagnostic-card" class="card span-3" hidden>
+        <h2>Start learning</h2>
+        <p class="muted">Answer a short diagnostic, then get your next topic and question.</p>
+        <button id="start-diagnostic" class="btn primary" type="button">Start learning</button>
+      </section>
+
+      <section class="card span-3">
+        <h2>Topic map</h2>
+        <p class="muted small">Topics are unlocked when their prerequisites reach 60% mastery.</p>
+        <p id="subject-status-badge" class="draft-badge" hidden>Draft / unreviewed</p>
+        <div id="topic-map" class="topic-map"></div>
+      </section>
+
+      <section class="card span-2">
+        <h2>Your mastery</h2>
+        <p class="muted small">Estimated knowledge per topic (0 = none, 1 = mastered).</p>
+        <div class="chart-box">
+          <canvas id="mastery-chart" role="img" aria-label="Estimated mastery per topic chart. Topic progress is also shown in the topic map."></canvas>
+        </div>
+        <p id="chart-status" class="muted small" hidden></p>
+      </section>
+
+      <section class="card highlight">
+        <h2>Next recommended activity</h2>
+        <div id="top-rec" class="rec-card">Loading…</div>
+        <h3 class="mt">Alternatives</h3>
+        <ul id="alt-recs" class="alt-list"></ul>
+        <div id="empty-path-recovery" class="discovery-results" hidden>
+          <p id="empty-path-message" class="muted" aria-live="polite"></p>
+          <div class="profile-actions">
+            <button id="build-subject-path" class="btn primary" type="button">
+              Build path from internet
+            </button>
+            <button id="retry-subject-discovery" class="btn ghost" type="button" hidden>
+              Search again
+            </button>
+            <button id="pick-discovery-results" class="btn ghost" type="button" hidden>
+              Pick from results
+            </button>
+          </div>
+          <div id="manual-path-results" class="discovery-results" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Quick stats</h2>
+        <ul id="stats" class="stats"></ul>
+      </section>
+
+      <section class="card span-3">
+        <h2>How to improve</h2>
+        <ul id="improvement-list" class="improvement-list"></ul>
+      </section>
+
+      <section class="card span-3">
+        <h2>Recent activity</h2>
+        <table id="history-table" class="history">
+          <caption class="visually-hidden">Recent learning activity</caption>
+          <thead>
+            <tr>
+              <th scope="col">When</th><th scope="col">Topic</th><th scope="col">Type</th>
+              <th scope="col">Difficulty</th><th scope="col">Score</th><th scope="col">Gain</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <p id="history-empty" class="muted small">No activity yet — start with the recommendation above.</p>
+      </section>
+    </div>
+    </main>
+  </div>
+
+  <!-- ============ ACTIVITY MODAL ============ -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-content">
+      <h2 id="modal-title">Activity</h2>
+      <p id="modal-desc" class="muted small"></p>
+
+      <div id="quiz-questions" class="questions"></div>
+
+      <div class="modal-actions">
+        <button id="cancel-activity" class="btn ghost" type="button">Cancel</button>
+        <button id="submit-activity" class="btn primary" type="button">Submit answers</button>
+      </div>
+      <div id="modal-msg" class="msg" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

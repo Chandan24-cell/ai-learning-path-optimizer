@@ -1,0 +1,16 @@
+{
+  "topic": "Python",
+  "summary": "Python is an interpreted, high-level, general-purpose programming language with dynamic semantics.",
+  "linked_terms": ["dynamic semantics"],
+  "sibling_terms": ["static semantics", "dynamic typing", "type inference"],
+  "sibling_topics": ["Racket", "Groovy", "Kotlin"],
+  "source_url": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+  "wikidata_facts": [
+    {"property": "creator", "value": "Guido van Rossum", "value_type": "entity"}
+  ],
+  "sibling_facts": [
+    {"property": "creator", "value": "James Gosling", "value_type": "entity"},
+    {"property": "creator", "value": "Yukihiro Matsumoto", "value_type": "entity"},
+    {"property": "creator", "value": "Brendan Eich", "value_type": "entity"}
+  ]
+}

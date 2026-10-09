@@ -1,0 +1,68 @@
+{
+  "consent_version": "phase-a-v1",
+  "countries": [
+    {
+      "id": "IN",
+      "label": "India",
+      "curricula": ["CBSE", "ICSE", "State board", "JEE track", "NEET track", "Other / self-directed"]
+    },
+    {
+      "id": "US",
+      "label": "United States",
+      "curricula": ["Common Core", "State curriculum", "AP", "Other / self-directed"]
+    },
+    {
+      "id": "GB",
+      "label": "United Kingdom",
+      "curricula": ["National Curriculum", "GCSE", "A level", "International Baccalaureate (IB)", "Other / self-directed"]
+    },
+    {
+      "id": "INT",
+      "label": "International",
+      "curricula": ["International Baccalaureate (IB)", "Other / self-directed"]
+    },
+    {
+      "id": "OTHER",
+      "label": "Other / not listed",
+      "curricula": ["Other / self-directed"]
+    }
+  ],
+  "languages": ["English", "Hindi", "Spanish", "French", "Arabic", "Other"],
+  "education_levels": [
+    {"id": "primary", "label": "Primary", "initial_level": 10, "max_level": 17},
+    {"id": "middle_school", "label": "Middle school", "initial_level": 25, "max_level": 32},
+    {"id": "high_school", "label": "High school", "initial_level": 40, "max_level": 49},
+    {"id": "undergraduate", "label": "Undergraduate", "initial_level": 58, "max_level": 66},
+    {"id": "postgraduate", "label": "Postgraduate", "initial_level": 75, "max_level": 82},
+    {"id": "phd", "label": "PhD", "initial_level": 90, "max_level": 94},
+    {"id": "professional", "label": "Professional", "initial_level": 98, "max_level": 100}
+  ],
+  "institution_types": [
+    {"id": "school", "label": "School"},
+    {"id": "college", "label": "College"},
+    {"id": "university", "label": "University"},
+    {"id": "training", "label": "Training program"},
+    {"id": "self_study", "label": "Self-study"},
+    {"id": "other", "label": "Other"}
+  ],
+  "learning_goals": [
+    {"id": "exam", "label": "Prepare for an exam"},
+    {"id": "skill", "label": "Build a skill"},
+    {"id": "career", "label": "Support my career"},
+    {"id": "curiosity", "label": "Learn out of curiosity"}
+  ],
+  "learning_styles": [
+    {"id": "text", "label": "Text"},
+    {"id": "visual", "label": "Visual"},
+    {"id": "examples", "label": "Worked examples"},
+    {"id": "mixed", "label": "A mix of styles"}
+  ],
+  "prior_experience_options": [
+    {"id": "new", "label": "New to this subject"},
+    {"id": "some", "label": "Some experience"},
+    {"id": "experienced", "label": "Experienced"},
+    {"id": "advanced", "label": "Advanced experience"}
+  ],
+  "institution_type_note": "Select a type only; do not enter a school or institution name.",
+  "privacy_notice": "We collect the profile choices shown here to set a starting subject level and tailor recommendations. We do not ask for your age, birth date, full name, or institution name. If you are under 18 or your age is unknown, review this with a parent, guardian, or trusted adult before consenting. You can edit or delete this profile later."
+}

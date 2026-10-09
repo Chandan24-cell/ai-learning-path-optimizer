@@ -1,0 +1,43 @@
+{
+  "format": "numpy-dense-v1",
+  "dense_layers": 3,
+  "columns_after_corr": [
+    "candidate_topic_mastery",
+    "prerequisite_mastery_average",
+    "difficulty_gap",
+    "engagement",
+    "recent_score_trend",
+    "attempts",
+    "time",
+    "learner_level",
+    "log_attempts",
+    "log_time",
+    "rtype_video",
+    "rtype_article",
+    "rtype_quiz",
+    "rtype_interactive",
+    "rtype_project",
+    "goal_exam",
+    "goal_skill",
+    "goal_career",
+    "goal_curiosity"
+  ],
+  "selected_idx": [
+    0,
+    2,
+    7,
+    1,
+    5,
+    8,
+    3,
+    4,
+    6,
+    10,
+    16,
+    9,
+    14,
+    15,
+    17
+  ],
+  "activation": "relu-hidden-linear-output"
+}

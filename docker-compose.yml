@@ -1,0 +1,43 @@
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: learning_path
+      POSTGRES_USER: learning_path
+      POSTGRES_PASSWORD: local-compose-only-password
+    ports:
+      - "54329:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./tests/postgres-init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U learning_path -d learning_path"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      APP_ENV: development
+      APP_SECRET: ${APP_SECRET:?Set APP_SECRET in .env before using Compose}
+      DATABASE_URL: postgresql+psycopg://learning_path:local-compose-only-password@db:5432/learning_path
+      MODEL_DIR: /app/outputs/models
+      PORT: 8000
+      ALLOWED_ORIGINS: http://localhost:8000,http://127.0.0.1:8000
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    command:
+      [
+        "sh",
+        "-c",
+        "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000 --proxy-headers --forwarded-allow-ips='*'",
+      ]
+
+volumes:
+  postgres_data:

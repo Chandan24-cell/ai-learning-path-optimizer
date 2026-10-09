@@ -1,0 +1,146 @@
+resource_id,topic_id,topic,topic_name,rtype,difficulty,duration,learning_power,engagement_prior,prerequisites,graph_id
+simulated-graph-1.topic-1.video,simulated-graph-1.topic-1,0,Topic 1,video,1.7121312504865873,12.0,0.5,0.7,(),simulated-graph-1
+simulated-graph-1.topic-1.article,simulated-graph-1.topic-1,0,Topic 1,article,2.7432598124187244,18.0,0.45,0.45,(),simulated-graph-1
+simulated-graph-1.topic-1.quiz,simulated-graph-1.topic-1,0,Topic 1,quiz,2.905160982897296,10.0,0.65,0.55,(),simulated-graph-1
+simulated-graph-1.topic-1.interactive,simulated-graph-1.topic-1,0,Topic 1,interactive,2.8160371694860857,25.0,0.8,0.85,(),simulated-graph-1
+simulated-graph-1.topic-1.project,simulated-graph-1.topic-1,0,Topic 1,project,2.793025804353455,45.0,0.9,0.9,(),simulated-graph-1
+simulated-graph-1.topic-2.video,simulated-graph-1.topic-2,1,Topic 2,video,2.8523846934060098,12.0,0.5,0.7,(),simulated-graph-1
+simulated-graph-1.topic-2.article,simulated-graph-1.topic-2,1,Topic 2,article,3.237032813582415,18.0,0.45,0.45,(),simulated-graph-1
+simulated-graph-1.topic-2.quiz,simulated-graph-1.topic-2,1,Topic 2,quiz,4.1724028048268345,10.0,0.65,0.55,(),simulated-graph-1
+simulated-graph-1.topic-2.interactive,simulated-graph-1.topic-2,1,Topic 2,interactive,3.3060264218857154,25.0,0.8,0.85,(),simulated-graph-1
+simulated-graph-1.topic-2.project,simulated-graph-1.topic-2,1,Topic 2,project,4.072172186769699,45.0,0.9,0.9,(),simulated-graph-1
+simulated-graph-1.topic-3.video,simulated-graph-1.topic-3,2,Topic 3,video,2.5970173109724297,12.0,0.5,0.7,"('simulated-graph-1.topic-1',)",simulated-graph-1
+simulated-graph-1.topic-3.article,simulated-graph-1.topic-3,2,Topic 3,article,3.4458208359578384,18.0,0.45,0.45,"('simulated-graph-1.topic-1',)",simulated-graph-1
+simulated-graph-1.topic-3.quiz,simulated-graph-1.topic-3,2,Topic 3,quiz,3.7923769534993923,10.0,0.65,0.55,"('simulated-graph-1.topic-1',)",simulated-graph-1
+simulated-graph-1.topic-3.interactive,simulated-graph-1.topic-3,2,Topic 3,interactive,3.535531461525671,25.0,0.8,0.85,"('simulated-graph-1.topic-1',)",simulated-graph-1
+simulated-graph-1.topic-3.project,simulated-graph-1.topic-3,2,Topic 3,project,3.6856852450348754,45.0,0.9,0.9,"('simulated-graph-1.topic-1',)",simulated-graph-1
+simulated-graph-1.topic-4.video,simulated-graph-1.topic-4,3,Topic 4,video,1.9978608585182038,12.0,0.5,0.7,"('simulated-graph-1.topic-2',)",simulated-graph-1
+simulated-graph-1.topic-4.article,simulated-graph-1.topic-4,3,Topic 4,article,2.2636067114383245,18.0,0.45,0.45,"('simulated-graph-1.topic-2',)",simulated-graph-1
+simulated-graph-1.topic-4.quiz,simulated-graph-1.topic-4,3,Topic 4,quiz,2.4760503587458382,10.0,0.65,0.55,"('simulated-graph-1.topic-2',)",simulated-graph-1
+simulated-graph-1.topic-4.interactive,simulated-graph-1.topic-4,3,Topic 4,interactive,2.530161735388759,25.0,0.8,0.85,"('simulated-graph-1.topic-2',)",simulated-graph-1
+simulated-graph-1.topic-4.project,simulated-graph-1.topic-4,3,Topic 4,project,2.8037576716795143,45.0,0.9,0.9,"('simulated-graph-1.topic-2',)",simulated-graph-1
+simulated-graph-1.topic-5.video,simulated-graph-1.topic-5,4,Topic 5,video,1.0,12.0,0.5,0.7,(),simulated-graph-1
+simulated-graph-1.topic-5.article,simulated-graph-1.topic-5,4,Topic 5,article,2.1611853943797676,18.0,0.45,0.45,(),simulated-graph-1
+simulated-graph-1.topic-5.quiz,simulated-graph-1.topic-5,4,Topic 5,quiz,2.6688437059371948,10.0,0.65,0.55,(),simulated-graph-1
+simulated-graph-1.topic-5.interactive,simulated-graph-1.topic-5,4,Topic 5,interactive,2.184070759007753,25.0,0.8,0.85,(),simulated-graph-1
+simulated-graph-1.topic-5.project,simulated-graph-1.topic-5,4,Topic 5,project,2.5569586560758633,45.0,0.9,0.9,(),simulated-graph-1
+simulated-graph-2.topic-1.video,simulated-graph-2.topic-1,0,Topic 1,video,2.244847983568503,12.0,0.5,0.7,(),simulated-graph-2
+simulated-graph-2.topic-1.article,simulated-graph-2.topic-1,0,Topic 1,article,2.6311667095486033,18.0,0.45,0.45,(),simulated-graph-2
+simulated-graph-2.topic-1.quiz,simulated-graph-2.topic-1,0,Topic 1,quiz,3.23102993467112,10.0,0.65,0.55,(),simulated-graph-2
+simulated-graph-2.topic-1.interactive,simulated-graph-2.topic-1,0,Topic 1,interactive,3.2628416915842853,25.0,0.8,0.85,(),simulated-graph-2
+simulated-graph-2.topic-1.project,simulated-graph-2.topic-1,0,Topic 1,project,3.627956111355283,45.0,0.9,0.9,(),simulated-graph-2
+simulated-graph-2.topic-2.video,simulated-graph-2.topic-2,1,Topic 2,video,3.3844382033514124,12.0,0.5,0.7,"('simulated-graph-2.topic-1',)",simulated-graph-2
+simulated-graph-2.topic-2.article,simulated-graph-2.topic-2,1,Topic 2,article,3.484664140083083,18.0,0.45,0.45,"('simulated-graph-2.topic-1',)",simulated-graph-2
+simulated-graph-2.topic-2.quiz,simulated-graph-2.topic-2,1,Topic 2,quiz,4.42425144860305,10.0,0.65,0.55,"('simulated-graph-2.topic-1',)",simulated-graph-2
+simulated-graph-2.topic-2.interactive,simulated-graph-2.topic-2,1,Topic 2,interactive,4.36413617122059,25.0,0.8,0.85,"('simulated-graph-2.topic-1',)",simulated-graph-2
+simulated-graph-2.topic-2.project,simulated-graph-2.topic-2,1,Topic 2,project,4.668528808641984,45.0,0.9,0.9,"('simulated-graph-2.topic-1',)",simulated-graph-2
+simulated-graph-2.topic-3.video,simulated-graph-2.topic-3,2,Topic 3,video,1.50686203774565,12.0,0.5,0.7,(),simulated-graph-2
+simulated-graph-2.topic-3.article,simulated-graph-2.topic-3,2,Topic 3,article,2.157253195021104,18.0,0.45,0.45,(),simulated-graph-2
+simulated-graph-2.topic-3.quiz,simulated-graph-2.topic-3,2,Topic 3,quiz,2.660969263363507,10.0,0.65,0.55,(),simulated-graph-2
+simulated-graph-2.topic-3.interactive,simulated-graph-2.topic-3,2,Topic 3,interactive,2.654707628641283,25.0,0.8,0.85,(),simulated-graph-2
+simulated-graph-2.topic-3.project,simulated-graph-2.topic-3,2,Topic 3,project,2.990588433234317,45.0,0.9,0.9,(),simulated-graph-2
+simulated-graph-2.topic-4.video,simulated-graph-2.topic-4,3,Topic 4,video,1.3844531107037044,12.0,0.5,0.7,(),simulated-graph-2
+simulated-graph-2.topic-4.article,simulated-graph-2.topic-4,3,Topic 4,article,1.3803837026919716,18.0,0.45,0.45,(),simulated-graph-2
+simulated-graph-2.topic-4.quiz,simulated-graph-2.topic-4,3,Topic 4,quiz,1.9079111774649382,10.0,0.65,0.55,(),simulated-graph-2
+simulated-graph-2.topic-4.interactive,simulated-graph-2.topic-4,3,Topic 4,interactive,1.760890926249926,25.0,0.8,0.85,(),simulated-graph-2
+simulated-graph-2.topic-4.project,simulated-graph-2.topic-4,3,Topic 4,project,2.3245330935088018,45.0,0.9,0.9,(),simulated-graph-2
+simulated-graph-2.topic-5.video,simulated-graph-2.topic-5,4,Topic 5,video,3.414092083402096,12.0,0.5,0.7,"('simulated-graph-2.topic-2', 'simulated-graph-2.topic-3')",simulated-graph-2
+simulated-graph-2.topic-5.article,simulated-graph-2.topic-5,4,Topic 5,article,3.211863336515759,18.0,0.45,0.45,"('simulated-graph-2.topic-2', 'simulated-graph-2.topic-3')",simulated-graph-2
+simulated-graph-2.topic-5.quiz,simulated-graph-2.topic-5,4,Topic 5,quiz,4.37545611058931,10.0,0.65,0.55,"('simulated-graph-2.topic-2', 'simulated-graph-2.topic-3')",simulated-graph-2
+simulated-graph-2.topic-5.interactive,simulated-graph-2.topic-5,4,Topic 5,interactive,3.4200038271779114,25.0,0.8,0.85,"('simulated-graph-2.topic-2', 'simulated-graph-2.topic-3')",simulated-graph-2
+simulated-graph-2.topic-5.project,simulated-graph-2.topic-5,4,Topic 5,project,4.200894458983623,45.0,0.9,0.9,"('simulated-graph-2.topic-2', 'simulated-graph-2.topic-3')",simulated-graph-2
+simulated-graph-2.topic-6.video,simulated-graph-2.topic-6,5,Topic 6,video,1.0,12.0,0.5,0.7,"('simulated-graph-2.topic-5',)",simulated-graph-2
+simulated-graph-2.topic-6.article,simulated-graph-2.topic-6,5,Topic 6,article,1.0447069991568863,18.0,0.45,0.45,"('simulated-graph-2.topic-5',)",simulated-graph-2
+simulated-graph-2.topic-6.quiz,simulated-graph-2.topic-6,5,Topic 6,quiz,1.862667029426189,10.0,0.65,0.55,"('simulated-graph-2.topic-5',)",simulated-graph-2
+simulated-graph-2.topic-6.interactive,simulated-graph-2.topic-6,5,Topic 6,interactive,1.8520268845470718,25.0,0.8,0.85,"('simulated-graph-2.topic-5',)",simulated-graph-2
+simulated-graph-2.topic-6.project,simulated-graph-2.topic-6,5,Topic 6,project,1.9027439339575247,45.0,0.9,0.9,"('simulated-graph-2.topic-5',)",simulated-graph-2
+simulated-graph-2.topic-7.video,simulated-graph-2.topic-7,6,Topic 7,video,1.0473063053062242,12.0,0.5,0.7,"('simulated-graph-2.topic-2',)",simulated-graph-2
+simulated-graph-2.topic-7.article,simulated-graph-2.topic-7,6,Topic 7,article,1.6010428638797183,18.0,0.45,0.45,"('simulated-graph-2.topic-2',)",simulated-graph-2
+simulated-graph-2.topic-7.quiz,simulated-graph-2.topic-7,6,Topic 7,quiz,2.2346115366961117,10.0,0.65,0.55,"('simulated-graph-2.topic-2',)",simulated-graph-2
+simulated-graph-2.topic-7.interactive,simulated-graph-2.topic-7,6,Topic 7,interactive,2.1731884777797874,25.0,0.8,0.85,"('simulated-graph-2.topic-2',)",simulated-graph-2
+simulated-graph-2.topic-7.project,simulated-graph-2.topic-7,6,Topic 7,project,2.5470213344155312,45.0,0.9,0.9,"('simulated-graph-2.topic-2',)",simulated-graph-2
+simulated-graph-2.topic-8.video,simulated-graph-2.topic-8,7,Topic 8,video,1.0,12.0,0.5,0.7,"('simulated-graph-2.topic-6', 'simulated-graph-2.topic-7')",simulated-graph-2
+simulated-graph-2.topic-8.article,simulated-graph-2.topic-8,7,Topic 8,article,1.0,18.0,0.45,0.45,"('simulated-graph-2.topic-6', 'simulated-graph-2.topic-7')",simulated-graph-2
+simulated-graph-2.topic-8.quiz,simulated-graph-2.topic-8,7,Topic 8,quiz,1.460368193775457,10.0,0.65,0.55,"('simulated-graph-2.topic-6', 'simulated-graph-2.topic-7')",simulated-graph-2
+simulated-graph-2.topic-8.interactive,simulated-graph-2.topic-8,7,Topic 8,interactive,1.0,25.0,0.8,0.85,"('simulated-graph-2.topic-6', 'simulated-graph-2.topic-7')",simulated-graph-2
+simulated-graph-2.topic-8.project,simulated-graph-2.topic-8,7,Topic 8,project,1.6947272247105267,45.0,0.9,0.9,"('simulated-graph-2.topic-6', 'simulated-graph-2.topic-7')",simulated-graph-2
+simulated-graph-3.topic-1.video,simulated-graph-3.topic-1,0,Topic 1,video,2.404475605454305,12.0,0.5,0.7,(),simulated-graph-3
+simulated-graph-3.topic-1.article,simulated-graph-3.topic-1,0,Topic 1,article,3.2088688348005325,18.0,0.45,0.45,(),simulated-graph-3
+simulated-graph-3.topic-1.quiz,simulated-graph-3.topic-1,0,Topic 1,quiz,3.1335452384987548,10.0,0.65,0.55,(),simulated-graph-3
+simulated-graph-3.topic-1.interactive,simulated-graph-3.topic-1,0,Topic 1,interactive,3.274236864791225,25.0,0.8,0.85,(),simulated-graph-3
+simulated-graph-3.topic-1.project,simulated-graph-3.topic-1,0,Topic 1,project,3.938273418565049,45.0,0.9,0.9,(),simulated-graph-3
+simulated-graph-3.topic-2.video,simulated-graph-3.topic-2,1,Topic 2,video,3.0317461482663153,12.0,0.5,0.7,(),simulated-graph-3
+simulated-graph-3.topic-2.article,simulated-graph-3.topic-2,1,Topic 2,article,3.585209644138105,18.0,0.45,0.45,(),simulated-graph-3
+simulated-graph-3.topic-2.quiz,simulated-graph-3.topic-2,1,Topic 2,quiz,4.093797283571682,10.0,0.65,0.55,(),simulated-graph-3
+simulated-graph-3.topic-2.interactive,simulated-graph-3.topic-2,1,Topic 2,interactive,3.8037778009047174,25.0,0.8,0.85,(),simulated-graph-3
+simulated-graph-3.topic-2.project,simulated-graph-3.topic-2,1,Topic 2,project,4.418557310819828,45.0,0.9,0.9,(),simulated-graph-3
+simulated-graph-3.topic-3.video,simulated-graph-3.topic-3,2,Topic 3,video,1.1351292300254259,12.0,0.5,0.7,(),simulated-graph-3
+simulated-graph-3.topic-3.article,simulated-graph-3.topic-3,2,Topic 3,article,1.1395297908352853,18.0,0.45,0.45,(),simulated-graph-3
+simulated-graph-3.topic-3.quiz,simulated-graph-3.topic-3,2,Topic 3,quiz,1.7354839546058822,10.0,0.65,0.55,(),simulated-graph-3
+simulated-graph-3.topic-3.interactive,simulated-graph-3.topic-3,2,Topic 3,interactive,1.6560477306512058,25.0,0.8,0.85,(),simulated-graph-3
+simulated-graph-3.topic-3.project,simulated-graph-3.topic-3,2,Topic 3,project,2.174698721618556,45.0,0.9,0.9,(),simulated-graph-3
+simulated-graph-3.topic-4.video,simulated-graph-3.topic-4,3,Topic 4,video,2.4302580984646758,12.0,0.5,0.7,"('simulated-graph-3.topic-1',)",simulated-graph-3
+simulated-graph-3.topic-4.article,simulated-graph-3.topic-4,3,Topic 4,article,2.8309095341819517,18.0,0.45,0.45,"('simulated-graph-3.topic-1',)",simulated-graph-3
+simulated-graph-3.topic-4.quiz,simulated-graph-3.topic-4,3,Topic 4,quiz,3.0965445296805907,10.0,0.65,0.55,"('simulated-graph-3.topic-1',)",simulated-graph-3
+simulated-graph-3.topic-4.interactive,simulated-graph-3.topic-4,3,Topic 4,interactive,2.9080069688820083,25.0,0.8,0.85,"('simulated-graph-3.topic-1',)",simulated-graph-3
+simulated-graph-3.topic-4.project,simulated-graph-3.topic-4,3,Topic 4,project,3.6869286940320216,45.0,0.9,0.9,"('simulated-graph-3.topic-1',)",simulated-graph-3
+simulated-graph-3.topic-5.video,simulated-graph-3.topic-5,4,Topic 5,video,1.634302000310546,12.0,0.5,0.7,(),simulated-graph-3
+simulated-graph-3.topic-5.article,simulated-graph-3.topic-5,4,Topic 5,article,2.176032397543273,18.0,0.45,0.45,(),simulated-graph-3
+simulated-graph-3.topic-5.quiz,simulated-graph-3.topic-5,4,Topic 5,quiz,2.9194606987164744,10.0,0.65,0.55,(),simulated-graph-3
+simulated-graph-3.topic-5.interactive,simulated-graph-3.topic-5,4,Topic 5,interactive,2.3474429835129103,25.0,0.8,0.85,(),simulated-graph-3
+simulated-graph-3.topic-5.project,simulated-graph-3.topic-5,4,Topic 5,project,2.3217269812583226,45.0,0.9,0.9,(),simulated-graph-3
+simulated-graph-3.topic-6.video,simulated-graph-3.topic-6,5,Topic 6,video,1.0,12.0,0.5,0.7,"('simulated-graph-3.topic-1', 'simulated-graph-3.topic-3')",simulated-graph-3
+simulated-graph-3.topic-6.article,simulated-graph-3.topic-6,5,Topic 6,article,1.7980641790804153,18.0,0.45,0.45,"('simulated-graph-3.topic-1', 'simulated-graph-3.topic-3')",simulated-graph-3
+simulated-graph-3.topic-6.quiz,simulated-graph-3.topic-6,5,Topic 6,quiz,2.5711798265570707,10.0,0.65,0.55,"('simulated-graph-3.topic-1', 'simulated-graph-3.topic-3')",simulated-graph-3
+simulated-graph-3.topic-6.interactive,simulated-graph-3.topic-6,5,Topic 6,interactive,2.173438809412689,25.0,0.8,0.85,"('simulated-graph-3.topic-1', 'simulated-graph-3.topic-3')",simulated-graph-3
+simulated-graph-3.topic-6.project,simulated-graph-3.topic-6,5,Topic 6,project,2.399472917239412,45.0,0.9,0.9,"('simulated-graph-3.topic-1', 'simulated-graph-3.topic-3')",simulated-graph-3
+simulated-graph-3.topic-7.video,simulated-graph-3.topic-7,6,Topic 7,video,2.6549445512398187,12.0,0.5,0.7,"('simulated-graph-3.topic-1',)",simulated-graph-3
+simulated-graph-3.topic-7.article,simulated-graph-3.topic-7,6,Topic 7,article,3.1440012154616563,18.0,0.45,0.45,"('simulated-graph-3.topic-1',)",simulated-graph-3
+simulated-graph-3.topic-7.quiz,simulated-graph-3.topic-7,6,Topic 7,quiz,3.912424556207738,10.0,0.65,0.55,"('simulated-graph-3.topic-1',)",simulated-graph-3
+simulated-graph-3.topic-7.interactive,simulated-graph-3.topic-7,6,Topic 7,interactive,3.258558913645922,25.0,0.8,0.85,"('simulated-graph-3.topic-1',)",simulated-graph-3
+simulated-graph-3.topic-7.project,simulated-graph-3.topic-7,6,Topic 7,project,3.7466050916313822,45.0,0.9,0.9,"('simulated-graph-3.topic-1',)",simulated-graph-3
+simulated-graph-3.topic-8.video,simulated-graph-3.topic-8,7,Topic 8,video,1.4447435602916137,12.0,0.5,0.7,"('simulated-graph-3.topic-3', 'simulated-graph-3.topic-4', 'simulated-graph-3.topic-5')",simulated-graph-3
+simulated-graph-3.topic-8.article,simulated-graph-3.topic-8,7,Topic 8,article,1.049744937058445,18.0,0.45,0.45,"('simulated-graph-3.topic-3', 'simulated-graph-3.topic-4', 'simulated-graph-3.topic-5')",simulated-graph-3
+simulated-graph-3.topic-8.quiz,simulated-graph-3.topic-8,7,Topic 8,quiz,1.849358921139116,10.0,0.65,0.55,"('simulated-graph-3.topic-3', 'simulated-graph-3.topic-4', 'simulated-graph-3.topic-5')",simulated-graph-3
+simulated-graph-3.topic-8.interactive,simulated-graph-3.topic-8,7,Topic 8,interactive,1.2304150642607594,25.0,0.8,0.85,"('simulated-graph-3.topic-3', 'simulated-graph-3.topic-4', 'simulated-graph-3.topic-5')",simulated-graph-3
+simulated-graph-3.topic-8.project,simulated-graph-3.topic-8,7,Topic 8,project,2.071717330724259,45.0,0.9,0.9,"('simulated-graph-3.topic-3', 'simulated-graph-3.topic-4', 'simulated-graph-3.topic-5')",simulated-graph-3
+simulated-graph-4.topic-1.video,simulated-graph-4.topic-1,0,Topic 1,video,2.074950235069079,12.0,0.5,0.7,(),simulated-graph-4
+simulated-graph-4.topic-1.article,simulated-graph-4.topic-1,0,Topic 1,article,2.5911841922019745,18.0,0.45,0.45,(),simulated-graph-4
+simulated-graph-4.topic-1.quiz,simulated-graph-4.topic-1,0,Topic 1,quiz,3.0100226586799526,10.0,0.65,0.55,(),simulated-graph-4
+simulated-graph-4.topic-1.interactive,simulated-graph-4.topic-1,0,Topic 1,interactive,2.5991079576255562,25.0,0.8,0.85,(),simulated-graph-4
+simulated-graph-4.topic-1.project,simulated-graph-4.topic-1,0,Topic 1,project,3.5739550440872887,45.0,0.9,0.9,(),simulated-graph-4
+simulated-graph-4.topic-2.video,simulated-graph-4.topic-2,1,Topic 2,video,2.757132102875056,12.0,0.5,0.7,"('simulated-graph-4.topic-1',)",simulated-graph-4
+simulated-graph-4.topic-2.article,simulated-graph-4.topic-2,1,Topic 2,article,2.894656430191331,18.0,0.45,0.45,"('simulated-graph-4.topic-1',)",simulated-graph-4
+simulated-graph-4.topic-2.quiz,simulated-graph-4.topic-2,1,Topic 2,quiz,3.47245153474241,10.0,0.65,0.55,"('simulated-graph-4.topic-1',)",simulated-graph-4
+simulated-graph-4.topic-2.interactive,simulated-graph-4.topic-2,1,Topic 2,interactive,3.3721165688559886,25.0,0.8,0.85,"('simulated-graph-4.topic-1',)",simulated-graph-4
+simulated-graph-4.topic-2.project,simulated-graph-4.topic-2,1,Topic 2,project,3.8639039036976803,45.0,0.9,0.9,"('simulated-graph-4.topic-1',)",simulated-graph-4
+simulated-graph-4.topic-3.video,simulated-graph-4.topic-3,2,Topic 3,video,1.4003208651631167,12.0,0.5,0.7,(),simulated-graph-4
+simulated-graph-4.topic-3.article,simulated-graph-4.topic-3,2,Topic 3,article,1.6101865310983,18.0,0.45,0.45,(),simulated-graph-4
+simulated-graph-4.topic-3.quiz,simulated-graph-4.topic-3,2,Topic 3,quiz,2.699994661409539,10.0,0.65,0.55,(),simulated-graph-4
+simulated-graph-4.topic-3.interactive,simulated-graph-4.topic-3,2,Topic 3,interactive,1.9274488612074214,25.0,0.8,0.85,(),simulated-graph-4
+simulated-graph-4.topic-3.project,simulated-graph-4.topic-3,2,Topic 3,project,2.9030134486927053,45.0,0.9,0.9,(),simulated-graph-4
+simulated-graph-4.topic-4.video,simulated-graph-4.topic-4,3,Topic 4,video,1.0,12.0,0.5,0.7,"('simulated-graph-4.topic-3',)",simulated-graph-4
+simulated-graph-4.topic-4.article,simulated-graph-4.topic-4,3,Topic 4,article,1.30330349209714,18.0,0.45,0.45,"('simulated-graph-4.topic-3',)",simulated-graph-4
+simulated-graph-4.topic-4.quiz,simulated-graph-4.topic-4,3,Topic 4,quiz,1.1503472586845116,10.0,0.65,0.55,"('simulated-graph-4.topic-3',)",simulated-graph-4
+simulated-graph-4.topic-4.interactive,simulated-graph-4.topic-4,3,Topic 4,interactive,1.3603532508247538,25.0,0.8,0.85,"('simulated-graph-4.topic-3',)",simulated-graph-4
+simulated-graph-4.topic-4.project,simulated-graph-4.topic-4,3,Topic 4,project,2.2588472578273895,45.0,0.9,0.9,"('simulated-graph-4.topic-3',)",simulated-graph-4
+simulated-graph-4.topic-5.video,simulated-graph-4.topic-5,4,Topic 5,video,3.515371948250187,12.0,0.5,0.7,(),simulated-graph-4
+simulated-graph-4.topic-5.article,simulated-graph-4.topic-5,4,Topic 5,article,3.9263961738879605,18.0,0.45,0.45,(),simulated-graph-4
+simulated-graph-4.topic-5.quiz,simulated-graph-4.topic-5,4,Topic 5,quiz,4.496492668057491,10.0,0.65,0.55,(),simulated-graph-4
+simulated-graph-4.topic-5.interactive,simulated-graph-4.topic-5,4,Topic 5,interactive,4.5560606929169944,25.0,0.8,0.85,(),simulated-graph-4
+simulated-graph-4.topic-5.project,simulated-graph-4.topic-5,4,Topic 5,project,5.0,45.0,0.9,0.9,(),simulated-graph-4
+simulated-graph-4.topic-6.video,simulated-graph-4.topic-6,5,Topic 6,video,3.6139197887040493,12.0,0.5,0.7,"('simulated-graph-4.topic-5',)",simulated-graph-4
+simulated-graph-4.topic-6.article,simulated-graph-4.topic-6,5,Topic 6,article,4.011580191411007,18.0,0.45,0.45,"('simulated-graph-4.topic-5',)",simulated-graph-4
+simulated-graph-4.topic-6.quiz,simulated-graph-4.topic-6,5,Topic 6,quiz,4.119039022181276,10.0,0.65,0.55,"('simulated-graph-4.topic-5',)",simulated-graph-4
+simulated-graph-4.topic-6.interactive,simulated-graph-4.topic-6,5,Topic 6,interactive,4.092986334660851,25.0,0.8,0.85,"('simulated-graph-4.topic-5',)",simulated-graph-4
+simulated-graph-4.topic-6.project,simulated-graph-4.topic-6,5,Topic 6,project,4.854987560088218,45.0,0.9,0.9,"('simulated-graph-4.topic-5',)",simulated-graph-4
+simulated-graph-4.topic-7.video,simulated-graph-4.topic-7,6,Topic 7,video,3.2043447701148042,12.0,0.5,0.7,"('simulated-graph-4.topic-2', 'simulated-graph-4.topic-5')",simulated-graph-4
+simulated-graph-4.topic-7.article,simulated-graph-4.topic-7,6,Topic 7,article,3.6899799342786626,18.0,0.45,0.45,"('simulated-graph-4.topic-2', 'simulated-graph-4.topic-5')",simulated-graph-4
+simulated-graph-4.topic-7.quiz,simulated-graph-4.topic-7,6,Topic 7,quiz,3.8639956628725973,10.0,0.65,0.55,"('simulated-graph-4.topic-2', 'simulated-graph-4.topic-5')",simulated-graph-4
+simulated-graph-4.topic-7.interactive,simulated-graph-4.topic-7,6,Topic 7,interactive,3.878586203072477,25.0,0.8,0.85,"('simulated-graph-4.topic-2', 'simulated-graph-4.topic-5')",simulated-graph-4
+simulated-graph-4.topic-7.project,simulated-graph-4.topic-7,6,Topic 7,project,4.44076697681776,45.0,0.9,0.9,"('simulated-graph-4.topic-2', 'simulated-graph-4.topic-5')",simulated-graph-4
+simulated-graph-4.topic-8.video,simulated-graph-4.topic-8,7,Topic 8,video,1.289859638989849,12.0,0.5,0.7,"('simulated-graph-4.topic-6',)",simulated-graph-4
+simulated-graph-4.topic-8.article,simulated-graph-4.topic-8,7,Topic 8,article,1.0980490354186079,18.0,0.45,0.45,"('simulated-graph-4.topic-6',)",simulated-graph-4
+simulated-graph-4.topic-8.quiz,simulated-graph-4.topic-8,7,Topic 8,quiz,1.6982300600405877,10.0,0.65,0.55,"('simulated-graph-4.topic-6',)",simulated-graph-4
+simulated-graph-4.topic-8.interactive,simulated-graph-4.topic-8,7,Topic 8,interactive,1.478305159287782,25.0,0.8,0.85,"('simulated-graph-4.topic-6',)",simulated-graph-4
+simulated-graph-4.topic-8.project,simulated-graph-4.topic-8,7,Topic 8,project,1.5972628142923524,45.0,0.9,0.9,"('simulated-graph-4.topic-6',)",simulated-graph-4

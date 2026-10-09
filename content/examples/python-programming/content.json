@@ -1,0 +1,847 @@
+{
+  "slug": "python-programming",
+  "name": "Python Programming",
+  "description": "A draft progression from Python basics to functions, files, and reliable error handling.",
+  "questions_status": "draft; teacher review required",
+  "topics": [
+    {
+      "id": "fundamentals",
+      "name": "Python Fundamentals",
+      "order": 1,
+      "prerequisites": [],
+      "resources": [
+        {
+          "id": "fundamentals-visual-preview",
+          "type": "video",
+          "title": "Python Fundamentals: visual preview",
+          "difficulty": 1,
+          "duration": 10,
+          "body": "Draft storyboard activity: sketch and narrate one core python fundamentals idea; this label does not refer to a published video."
+        },
+        {
+          "id": "fundamentals-guided-practice",
+          "type": "article",
+          "title": "Python Fundamentals: guided practice",
+          "difficulty": 2,
+          "duration": 10,
+          "body": "Original self-guided activity: work through a short python fundamentals example and check each reasoning step; this is a learning prompt, not an external resource."
+        }
+      ],
+      "questions": [
+        {
+          "id": "fundamentals-question-01",
+          "difficulty": 1,
+          "text": "What value does the expression 2 + 3 * 4 produce?",
+          "options": [
+            "20",
+            "14",
+            "24",
+            "9"
+          ],
+          "correct_option": 1,
+          "explanation": "Multiplication has higher precedence than addition, so 2 + 12 = 14.",
+          "diagnostic": true
+        },
+        {
+          "id": "fundamentals-question-02",
+          "difficulty": 2,
+          "text": "Which literal creates a string containing the word hello?",
+          "options": [
+            "hello",
+            "\"hello\"",
+            "[hello]",
+            "{hello}"
+          ],
+          "correct_option": 1,
+          "explanation": "Text literals are quoted; the quotes are syntax, not part of the value.",
+          "diagnostic": false
+        },
+        {
+          "id": "fundamentals-question-03",
+          "difficulty": 3,
+          "text": "After x = 7; x += 2, what is x?",
+          "options": [
+            "5",
+            "7",
+            "9",
+            "14"
+          ],
+          "correct_option": 2,
+          "explanation": "The augmented assignment adds 2 to the existing value 7.",
+          "diagnostic": false
+        },
+        {
+          "id": "fundamentals-question-04",
+          "difficulty": 4,
+          "text": "What does type(3.0) report in standard Python?",
+          "options": [
+            "int",
+            "float",
+            "str",
+            "bool"
+          ],
+          "correct_option": 1,
+          "explanation": "A numeric literal with a decimal point is a float.",
+          "diagnostic": false
+        },
+        {
+          "id": "fundamentals-question-05",
+          "difficulty": 5,
+          "text": "Which expression tests whether n is an even integer?",
+          "options": [
+            "n / 2 == 0",
+            "n % 2 == 0",
+            "n // 2 == 0",
+            "n ** 2 == 0"
+          ],
+          "correct_option": 1,
+          "explanation": "An even integer has remainder zero when divided by 2.",
+          "diagnostic": false
+        },
+        {
+          "id": "fundamentals-question-06",
+          "difficulty": 2,
+          "text": "What is the value of bool(0)?",
+          "options": [
+            "True",
+            "False",
+            "0",
+            "None"
+          ],
+          "correct_option": 1,
+          "explanation": "Zero is a falsy numeric value in Python.",
+          "diagnostic": false
+        },
+        {
+          "id": "fundamentals-question-07",
+          "difficulty": 3,
+          "text": "Which statement assigns the value 12 to a variable named count?",
+          "options": [
+            "count == 12",
+            "12 = count",
+            "count = 12",
+            "let count: 12"
+          ],
+          "correct_option": 2,
+          "explanation": "The assignment operator is a single equals sign with the variable on the left.",
+          "diagnostic": false
+        },
+        {
+          "id": "fundamentals-question-08",
+          "difficulty": 4,
+          "text": "What is the result of \"py\" + \"thon\"?",
+          "options": [
+            "py thon",
+            "python",
+            "py+thon",
+            "An error"
+          ],
+          "correct_option": 1,
+          "explanation": "The + operator concatenates two strings directly.",
+          "diagnostic": false
+        }
+      ]
+    },
+    {
+      "id": "control-flow",
+      "name": "Conditions and Loops",
+      "order": 2,
+      "prerequisites": [
+        "fundamentals"
+      ],
+      "resources": [
+        {
+          "id": "control-flow-visual-preview",
+          "type": "video",
+          "title": "Conditions and Loops: visual preview",
+          "difficulty": 2,
+          "duration": 10,
+          "body": "Draft storyboard activity: sketch and narrate one core conditions and loops idea; this label does not refer to a published video."
+        },
+        {
+          "id": "control-flow-guided-practice",
+          "type": "quiz",
+          "title": "Conditions and Loops: guided practice",
+          "difficulty": 3,
+          "duration": 10,
+          "body": "Original self-guided activity: work through a short conditions and loops example and check each reasoning step; this is a learning prompt, not an external resource."
+        }
+      ],
+      "questions": [
+        {
+          "id": "control-flow-question-01",
+          "difficulty": 1,
+          "text": "Which keyword begins a conditional branch in Python?",
+          "options": [
+            "when",
+            "if",
+            "case",
+            "check"
+          ],
+          "correct_option": 1,
+          "explanation": "Python uses if to begin a conditional statement.",
+          "diagnostic": true
+        },
+        {
+          "id": "control-flow-question-02",
+          "difficulty": 2,
+          "text": "How many times does for i in range(3) execute its body?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "It never executes"
+          ],
+          "correct_option": 1,
+          "explanation": "range(3) yields 0, 1, and 2: three values.",
+          "diagnostic": false
+        },
+        {
+          "id": "control-flow-question-03",
+          "difficulty": 3,
+          "text": "What values are produced by range(2, 7, 2)?",
+          "options": [
+            "2, 4, 6",
+            "2, 4, 6, 8",
+            "0, 2, 4, 6",
+            "7, 5, 3"
+          ],
+          "correct_option": 0,
+          "explanation": "The start is included, the stop is excluded, and the step is 2.",
+          "diagnostic": false
+        },
+        {
+          "id": "control-flow-question-04",
+          "difficulty": 4,
+          "text": "What does break do inside a loop?",
+          "options": [
+            "Skips to the next iteration",
+            "Exits the nearest enclosing loop",
+            "Restarts the program",
+            "Pauses until input"
+          ],
+          "correct_option": 1,
+          "explanation": "break terminates the innermost loop immediately.",
+          "diagnostic": false
+        },
+        {
+          "id": "control-flow-question-05",
+          "difficulty": 5,
+          "text": "What is printed by: for i in range(3): print(i, end=\"\") ?",
+          "options": [
+            "012",
+            "123",
+            "0123",
+            "321"
+          ],
+          "correct_option": 0,
+          "explanation": "range(3) yields 0, 1, and 2 in ascending order.",
+          "diagnostic": false
+        },
+        {
+          "id": "control-flow-question-06",
+          "difficulty": 2,
+          "text": "Which value makes if not value: execute its body?",
+          "options": [
+            "A nonempty list",
+            "The integer 1",
+            "An empty string",
+            "The string \"yes\""
+          ],
+          "correct_option": 2,
+          "explanation": "An empty string is falsy, so not value evaluates to True.",
+          "diagnostic": false
+        },
+        {
+          "id": "control-flow-question-07",
+          "difficulty": 3,
+          "text": "What does continue do in a loop?",
+          "options": [
+            "Ends the loop",
+            "Skips the rest of this iteration",
+            "Repeats the current line forever",
+            "Returns from the function"
+          ],
+          "correct_option": 1,
+          "explanation": "continue advances to the next iteration without running the remaining body.",
+          "diagnostic": false
+        },
+        {
+          "id": "control-flow-question-08",
+          "difficulty": 4,
+          "text": "What is the final value of total? total=0; for n in [1,2,3]: total += n",
+          "options": [
+            "3",
+            "5",
+            "6",
+            "123"
+          ],
+          "correct_option": 2,
+          "explanation": "The loop accumulates 1 + 2 + 3, giving 6.",
+          "diagnostic": false
+        }
+      ]
+    },
+    {
+      "id": "collections",
+      "name": "Collections and Iteration",
+      "order": 3,
+      "prerequisites": [
+        "fundamentals"
+      ],
+      "resources": [
+        {
+          "id": "collections-visual-preview",
+          "type": "video",
+          "title": "Collections and Iteration: visual preview",
+          "difficulty": 3,
+          "duration": 10,
+          "body": "Draft storyboard activity: sketch and narrate one core collections and iteration idea; this label does not refer to a published video."
+        },
+        {
+          "id": "collections-guided-practice",
+          "type": "interactive",
+          "title": "Collections and Iteration: guided practice",
+          "difficulty": 4,
+          "duration": 10,
+          "body": "Original self-guided activity: work through a short collections and iteration example and check each reasoning step; this is a learning prompt, not an external resource."
+        }
+      ],
+      "questions": [
+        {
+          "id": "collections-question-01",
+          "difficulty": 1,
+          "text": "Which Python collection is ordered and mutable?",
+          "options": [
+            "tuple",
+            "list",
+            "frozenset",
+            "str"
+          ],
+          "correct_option": 1,
+          "explanation": "A list preserves element order and can be modified.",
+          "diagnostic": true
+        },
+        {
+          "id": "collections-question-02",
+          "difficulty": 2,
+          "text": "What is [10, 20, 30][1]?",
+          "options": [
+            "10",
+            "20",
+            "30",
+            "1"
+          ],
+          "correct_option": 1,
+          "explanation": "Python sequences use zero-based indexing, so index 1 selects the second item.",
+          "diagnostic": false
+        },
+        {
+          "id": "collections-question-03",
+          "difficulty": 3,
+          "text": "What does {\"a\": 1}[\"a\"] return?",
+          "options": [
+            "\"a\"",
+            "1",
+            "True",
+            "A key error"
+          ],
+          "correct_option": 1,
+          "explanation": "Dictionary indexing by an existing key returns its associated value.",
+          "diagnostic": false
+        },
+        {
+          "id": "collections-question-04",
+          "difficulty": 4,
+          "text": "What is len({2, 2, 3})?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct_option": 1,
+          "explanation": "Sets keep unique elements, leaving 2 and 3.",
+          "diagnostic": false
+        },
+        {
+          "id": "collections-question-05",
+          "difficulty": 5,
+          "text": "Which expression creates a new list of squares for values in nums?",
+          "options": [
+            "[x**2 for x in nums]",
+            "{x**2 in nums}",
+            "(x**2 = nums)",
+            "square(nums)"
+          ],
+          "correct_option": 0,
+          "explanation": "A list comprehension evaluates x**2 for each item in nums.",
+          "diagnostic": false
+        },
+        {
+          "id": "collections-question-06",
+          "difficulty": 2,
+          "text": "What does tuple([1, 2]) produce?",
+          "options": [
+            "[1, 2]",
+            "(1, 2)",
+            "{1, 2}",
+            "\"1, 2\""
+          ],
+          "correct_option": 1,
+          "explanation": "tuple converts the iterable into an immutable tuple.",
+          "diagnostic": false
+        },
+        {
+          "id": "collections-question-07",
+          "difficulty": 3,
+          "text": "If d = {\"x\": 4}, which test checks whether \"x\" is a key?",
+          "options": [
+            "4 in d",
+            "\"x\" in d",
+            "d has \"x\"",
+            "key(d) == \"x\""
+          ],
+          "correct_option": 1,
+          "explanation": "Membership testing on a dictionary checks keys by default.",
+          "diagnostic": false
+        },
+        {
+          "id": "collections-question-08",
+          "difficulty": 4,
+          "text": "What does list(enumerate([\"a\", \"b\"])) return?",
+          "options": [
+            "[(1, \"a\"), (2, \"b\")]",
+            "[(0, \"a\"), (1, \"b\")]",
+            "[\"a\", \"b\", 0, 1]",
+            "[(\"a\", 0), (\"b\", 1)]"
+          ],
+          "correct_option": 1,
+          "explanation": "enumerate pairs each item with its zero-based index by default.",
+          "diagnostic": false
+        }
+      ]
+    },
+    {
+      "id": "functions",
+      "name": "Functions and Scope",
+      "order": 4,
+      "prerequisites": [
+        "control-flow",
+        "collections"
+      ],
+      "resources": [
+        {
+          "id": "functions-visual-preview",
+          "type": "video",
+          "title": "Functions and Scope: visual preview",
+          "difficulty": 1,
+          "duration": 10,
+          "body": "Draft storyboard activity: sketch and narrate one core functions and scope idea; this label does not refer to a published video."
+        },
+        {
+          "id": "functions-guided-practice",
+          "type": "project",
+          "title": "Functions and Scope: guided practice",
+          "difficulty": 2,
+          "duration": 10,
+          "body": "Original self-guided activity: work through a short functions and scope example and check each reasoning step; this is a learning prompt, not an external resource."
+        }
+      ],
+      "questions": [
+        {
+          "id": "functions-question-01",
+          "difficulty": 1,
+          "text": "Which keyword defines a function in Python?",
+          "options": [
+            "func",
+            "def",
+            "function",
+            "lambda"
+          ],
+          "correct_option": 1,
+          "explanation": "A named function definition begins with def.",
+          "diagnostic": true
+        },
+        {
+          "id": "functions-question-02",
+          "difficulty": 2,
+          "text": "What does return 5 do in a function?",
+          "options": [
+            "Prints 5",
+            "Sends 5 back to the caller",
+            "Repeats the function",
+            "Defines a global variable"
+          ],
+          "correct_option": 1,
+          "explanation": "return supplies a result to the caller and ends that function call.",
+          "diagnostic": false
+        },
+        {
+          "id": "functions-question-03",
+          "difficulty": 3,
+          "text": "If def add(a, b=2): return a+b, what is add(3)?",
+          "options": [
+            "3",
+            "5",
+            "6",
+            "An error"
+          ],
+          "correct_option": 1,
+          "explanation": "The omitted b argument uses its default value 2.",
+          "diagnostic": false
+        },
+        {
+          "id": "functions-question-04",
+          "difficulty": 4,
+          "text": "What is the result of calling a function that reaches its end without return?",
+          "options": [
+            "False",
+            "0",
+            "None",
+            "An exception always occurs"
+          ],
+          "correct_option": 2,
+          "explanation": "A function that returns no explicit value implicitly returns None.",
+          "diagnostic": false
+        },
+        {
+          "id": "functions-question-05",
+          "difficulty": 5,
+          "text": "Why can a mutable list used as a default argument cause surprises?",
+          "options": [
+            "Python copies it on each call",
+            "The same default object is reused across calls",
+            "Lists cannot be defaults",
+            "Defaults are evaluated after every call"
+          ],
+          "correct_option": 1,
+          "explanation": "Default expressions are evaluated once when the def statement runs.",
+          "diagnostic": false
+        },
+        {
+          "id": "functions-question-06",
+          "difficulty": 2,
+          "text": "What does len(\"cat\") return?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "\"cat\""
+          ],
+          "correct_option": 1,
+          "explanation": "The string contains three characters.",
+          "diagnostic": false
+        },
+        {
+          "id": "functions-question-07",
+          "difficulty": 3,
+          "text": "Which statement makes a local name refer to a module-level variable for assignment?",
+          "options": [
+            "outer x",
+            "global x",
+            "public x",
+            "extern x"
+          ],
+          "correct_option": 1,
+          "explanation": "global declares that assignments to x use the module-level binding.",
+          "diagnostic": false
+        },
+        {
+          "id": "functions-question-08",
+          "difficulty": 4,
+          "text": "A function accepts *args. What does args contain inside the function?",
+          "options": [
+            "A dictionary of keyword arguments",
+            "A tuple of extra positional arguments",
+            "A list of all local variables",
+            "A single required argument"
+          ],
+          "correct_option": 1,
+          "explanation": "*args collects any extra positional arguments into a tuple.",
+          "diagnostic": false
+        }
+      ]
+    },
+    {
+      "id": "modules-and-files",
+      "name": "Modules and Files",
+      "order": 5,
+      "prerequisites": [
+        "functions"
+      ],
+      "resources": [
+        {
+          "id": "modules-and-files-visual-preview",
+          "type": "video",
+          "title": "Modules and Files: visual preview",
+          "difficulty": 2,
+          "duration": 10,
+          "body": "Draft storyboard activity: sketch and narrate one core modules and files idea; this label does not refer to a published video."
+        },
+        {
+          "id": "modules-and-files-guided-practice",
+          "type": "article",
+          "title": "Modules and Files: guided practice",
+          "difficulty": 3,
+          "duration": 10,
+          "body": "Original self-guided activity: work through a short modules and files example and check each reasoning step; this is a learning prompt, not an external resource."
+        }
+      ],
+      "questions": [
+        {
+          "id": "modules-and-files-question-01",
+          "difficulty": 1,
+          "text": "Which statement imports Python’s math module?",
+          "options": [
+            "include math",
+            "import math",
+            "using math",
+            "require(\"math\")"
+          ],
+          "correct_option": 1,
+          "explanation": "The import statement loads a module into the current namespace.",
+          "diagnostic": true
+        },
+        {
+          "id": "modules-and-files-question-02",
+          "difficulty": 2,
+          "text": "After import math, how do you call the square-root function?",
+          "options": [
+            "math.sqrt(9)",
+            "sqrt.math(9)",
+            "math->sqrt(9)",
+            "import.sqrt(9)"
+          ],
+          "correct_option": 0,
+          "explanation": "The module name qualifies its exported function.",
+          "diagnostic": false
+        },
+        {
+          "id": "modules-and-files-question-03",
+          "difficulty": 3,
+          "text": "What is the purpose of if __name__ == \"__main__\":?",
+          "options": [
+            "It imports main automatically",
+            "It runs a block only when the file is executed as the program",
+            "It declares a class",
+            "It catches import errors"
+          ],
+          "correct_option": 1,
+          "explanation": "When run directly, the module’s __name__ is set to \"__main__\".",
+          "diagnostic": false
+        },
+        {
+          "id": "modules-and-files-question-04",
+          "difficulty": 4,
+          "text": "Why is with open(\"data.txt\") as f commonly used?",
+          "options": [
+            "It sorts the file",
+            "It ensures the file is closed when the block exits",
+            "It makes the file read-only permanently",
+            "It converts text to JSON"
+          ],
+          "correct_option": 1,
+          "explanation": "A with statement manages the file context and closes it when leaving the block.",
+          "diagnostic": false
+        },
+        {
+          "id": "modules-and-files-question-05",
+          "difficulty": 5,
+          "text": "Which mode opens an existing text file for appending?",
+          "options": [
+            "\"r\"",
+            "\"w\"",
+            "\"a\"",
+            "\"x\""
+          ],
+          "correct_option": 2,
+          "explanation": "Append mode adds writes at the end without truncating existing contents.",
+          "diagnostic": false
+        },
+        {
+          "id": "modules-and-files-question-06",
+          "difficulty": 2,
+          "text": "Which standard-library module provides JSON parsing?",
+          "options": [
+            "csv",
+            "json",
+            "pathlib",
+            "math"
+          ],
+          "correct_option": 1,
+          "explanation": "The json module encodes and decodes JSON data.",
+          "diagnostic": false
+        },
+        {
+          "id": "modules-and-files-question-07",
+          "difficulty": 3,
+          "text": "What does pathlib.Path(\"notes.txt\").suffix return?",
+          "options": [
+            "\"notes\"",
+            "\".txt\"",
+            "\"notes.txt\"",
+            "None always"
+          ],
+          "correct_option": 1,
+          "explanation": "The suffix property returns the final extension including its leading dot.",
+          "diagnostic": false
+        },
+        {
+          "id": "modules-and-files-question-08",
+          "difficulty": 4,
+          "text": "What is a benefit of importing a module with import package.tool?",
+          "options": [
+            "Its names are isolated under package.tool",
+            "It executes no module code",
+            "It makes every name global",
+            "It prevents reuse"
+          ],
+          "correct_option": 0,
+          "explanation": "Qualified imports keep names under a module namespace and reduce collisions.",
+          "diagnostic": false
+        }
+      ]
+    },
+    {
+      "id": "exceptions-and-testing",
+      "name": "Exceptions and Testing",
+      "order": 6,
+      "prerequisites": [
+        "functions"
+      ],
+      "resources": [
+        {
+          "id": "exceptions-and-testing-visual-preview",
+          "type": "video",
+          "title": "Exceptions and Testing: visual preview",
+          "difficulty": 3,
+          "duration": 10,
+          "body": "Draft storyboard activity: sketch and narrate one core exceptions and testing idea; this label does not refer to a published video."
+        },
+        {
+          "id": "exceptions-and-testing-guided-practice",
+          "type": "quiz",
+          "title": "Exceptions and Testing: guided practice",
+          "difficulty": 4,
+          "duration": 10,
+          "body": "Original self-guided activity: work through a short exceptions and testing example and check each reasoning step; this is a learning prompt, not an external resource."
+        }
+      ],
+      "questions": [
+        {
+          "id": "exceptions-and-testing-question-01",
+          "difficulty": 1,
+          "text": "Which keyword begins an exception-handling block?",
+          "options": [
+            "try",
+            "attempt",
+            "catch",
+            "except"
+          ],
+          "correct_option": 0,
+          "explanation": "A try block contains code whose exceptions may be handled.",
+          "diagnostic": true
+        },
+        {
+          "id": "exceptions-and-testing-question-02",
+          "difficulty": 2,
+          "text": "Which exception is raised by 1 / 0?",
+          "options": [
+            "ValueError",
+            "ZeroDivisionError",
+            "KeyError",
+            "TypeError"
+          ],
+          "correct_option": 1,
+          "explanation": "Division by zero for numeric values raises ZeroDivisionError.",
+          "diagnostic": false
+        },
+        {
+          "id": "exceptions-and-testing-question-03",
+          "difficulty": 3,
+          "text": "What does an except ValueError clause do?",
+          "options": [
+            "Raises ValueError unconditionally",
+            "Handles matching ValueError exceptions",
+            "Runs only when no exception occurs",
+            "Defines a new exception class"
+          ],
+          "correct_option": 1,
+          "explanation": "The handler runs when the protected code raises a matching ValueError.",
+          "diagnostic": false
+        },
+        {
+          "id": "exceptions-and-testing-question-04",
+          "difficulty": 4,
+          "text": "What is the purpose of a finally block?",
+          "options": [
+            "Run cleanup code whether or not an exception occurred",
+            "Retry the operation forever",
+            "Suppress every exception",
+            "Run only after return"
+          ],
+          "correct_option": 0,
+          "explanation": "finally is used for cleanup that should occur after try/except processing.",
+          "diagnostic": false
+        },
+        {
+          "id": "exceptions-and-testing-question-05",
+          "difficulty": 5,
+          "text": "Which assertion tests that double(3) equals 6 in a simple unit test?",
+          "options": [
+            "assert double(3) == 6",
+            "check double(3) = 6",
+            "expect double(3) -> 6",
+            "double(3) should 6"
+          ],
+          "correct_option": 0,
+          "explanation": "Python’s assert statement raises AssertionError if the condition is false.",
+          "diagnostic": false
+        },
+        {
+          "id": "exceptions-and-testing-question-06",
+          "difficulty": 2,
+          "text": "What does raising an exception communicate?",
+          "options": [
+            "A normal return value",
+            "An exceptional condition to callers",
+            "A request to skip compilation",
+            "A comment to the interpreter"
+          ],
+          "correct_option": 1,
+          "explanation": "Exceptions signal that normal processing cannot continue as written.",
+          "diagnostic": false
+        },
+        {
+          "id": "exceptions-and-testing-question-07",
+          "difficulty": 3,
+          "text": "Why should a handler often catch a specific exception rather than bare except?",
+          "options": [
+            "To avoid handling unrelated failures accidentally",
+            "To make every error disappear",
+            "To disable tracebacks",
+            "To speed up arithmetic"
+          ],
+          "correct_option": 0,
+          "explanation": "Specific handlers limit recovery logic to errors it knows how to address.",
+          "diagnostic": false
+        },
+        {
+          "id": "exceptions-and-testing-question-08",
+          "difficulty": 4,
+          "text": "In pytest, what does a test function name usually begin with?",
+          "options": [
+            "check_",
+            "test_",
+            "verify.",
+            "spec-"
+          ],
+          "correct_option": 1,
+          "explanation": "Pytest’s default discovery recognizes functions whose names start with test_.",
+          "diagnostic": false
+        }
+      ]
+    }
+  ]
+}

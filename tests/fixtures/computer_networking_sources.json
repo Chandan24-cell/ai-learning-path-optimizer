@@ -1,0 +1,21 @@
+{
+  "subject": "Computer networking",
+  "source_url": "https://en.wikipedia.org/wiki/Computer_network",
+  "topics": [
+    {
+      "name": "Computer network",
+      "summary": "A computer network is a set of computers sharing resources located on or provided by network nodes. Computer networks use common communication protocols over digital interconnections to communicate with each other. Computer networks connect devices to exchange data and share resources.",
+      "linked_terms": ["network nodes", "communication protocols", "digital interconnections"]
+    },
+    {
+      "name": "Network protocol",
+      "summary": "A network protocol is a system of rules that allows two or more entities of a communications system to transmit information. Network protocols define how messages are formatted, transmitted, and received between connected devices. Network protocols can be implemented in hardware or software.",
+      "linked_terms": ["communications system", "messages", "connected devices"]
+    },
+    {
+      "name": "Packet switching",
+      "summary": "Packet switching is a method of grouping data that is transmitted over a digital network into packets. Packet switching sends packets through a network using available routes. Packet switching is used in many digital communication networks.",
+      "linked_terms": ["digital network", "packets", "available routes"]
+    }
+  ]
+}
