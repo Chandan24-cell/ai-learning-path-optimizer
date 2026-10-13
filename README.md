@@ -6,6 +6,10 @@ This is a local web application for exploring personalized study recommendations
 >
 > **What it is not:** a proven teaching product, a source of real learning materials, or a service ready for public deployment.
 
+
+## 🌐 Deployed 
+
+🔗 **Link:** https://ai-learning-path-optimizer.onrender.com
 ## Status and limitations
 
 - All learners used to train and evaluate the recommender are **simulated**. These results do not prove real learning gains.
